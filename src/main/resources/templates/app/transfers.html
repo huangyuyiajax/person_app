@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>支付中心</title>
+    <link rel="stylesheet" href="/css//sm.min.css">
+    <link rel="stylesheet" href="/css//main.css" />
+</head>
+<body>
+<input type="hidden" id="amount" th:value="${amount}">
+<input type="hidden" id="openid" th:value="${openid}">
+<div class="page-group">
+    <div class="page page-current bgColor">
+        <!-- 你的html代码 -->
+        <div class="content bgColor">
+            <div class="pay_content">
+                <p class="pay_1">提现金额</p>
+                <p class="pay_2"><span>￥</span><em th:text="${amount+'元'}"></em></p>
+            </div>
+            <p class="pay_method">到账方式</p>
+            <div class="pay_wechat">
+                <span class="icon-wechat"></span>
+                <span class="wechat_text">提现到微信</span>
+                <i class="icon-select active"></i>
+            </div>
+            <div class="content-block-1">
+                <p class="noMargin clearfix">
+                    <a  href="javascript:void(0);" id="cancelTransfers" class="button button-fill button-round btn-height btn_cancel">取消</a>
+                    <button id="toTransfers" class="button button-fill button-round btn-height btn_enter" style="width:49%;float:right">确定提现</button>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/js/jquery-2.1.4.js"></script>
+<script>jQuery.noConflict()</script>
+<script type='text/javascript' src='/js/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='/js/sm.min.js' charset='utf-8'></script>
+<script type='text/javascript' src="/js/sm.config.js" charset='utf-8'></script>
+<script type="text/javascript" src="/js/com.js"></script>
+<script type="text/javascript" src="/js/app/transfers.js"></script>
+<script type="text/javascript" src="/js/layer/layer.js"></script>
+</body>
+</html>
