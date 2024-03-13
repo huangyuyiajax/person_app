@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title></title>
+</head>
+<style>
+    *{padding: 0;margin: 0;}
+    html{height: 100%;}
+    div.navbar{
+        overflow: hidden;
+        background-color: #2e8ded;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    div.navbar a{
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 0px;
+        text-decoration: none;
+        font-size: 17px;
+        width: 25%;
+    }
+    div.navbar a.acctive{
+        color: #eeff1e;
+    }
+    .title-left{
+        margin-right: 20px;text-decoration: none;
+    }
+    .title-right{
+        margin-left: 20px;text-decoration: none;
+    }
+    .outer{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 55px;
+        display: flex;
+        -webkit-box-orient:vertical;
+        flex-direction:column;
+    }
+    .body{
+        width: 100%;
+        height: 100%;
+        -webkit-box-flex: 1;
+        background-color: #fff;
+        overflow-y: scroll;
+    }
+</style>
+<link rel="stylesheet" type="text/css" href="/css/iconfont/iconfont.css">
+<link rel="stylesheet" type="text/css" href="/css/order.css" />
+<link rel="stylesheet" type="text/css" href="/css/person.css" />
+<link rel="stylesheet" type="text/css" href="/css/record.css" />
+<link rel="stylesheet" type="text/css" href="/css/bill.css" />
+<link rel="stylesheet" type="text/css" href="/css/dropload/dropload.css">
+<link rel="stylesheet" type="text/css" href="/css/swiper4/animate.min.css">
+<link rel="stylesheet" type="text/css" href="/css/swiper4/swiper.min.css">
+<body>
+<div>
+    <div class="outer swiper-container">
+        <div class="swiper-wrapper">
+            <div class="body swiper-slide" id="order">
+                <header>
+                    <p><span id="lotteryName"></span><a class="iconfont title-right" href="#">&#xe66a;</a></p>
+                </header>
+                <div class="content">
+                    <div style="text-align: center;padding: 0.2em">
+                        <span>赔率：1赔<span id="odds"></span>，开码前<span id="minutes"></span>分钟停止投注</span>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th>生肖</th>
+                                <th>特码</th>
+                                <th>金额</th>
+                                <th><span onclick="clearAll()" class="check-bottom">清空</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th width="10%" class="index">1
+                                </th>
+                                <th width="20%" class="shengxiao">
+                                </th>
+                                <th width="20%">
+                                    <label>
+                                        <input type="text" name="code" value="" maxlength="2" onchange="changheCode(this)" onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^0-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}if(this.value> 49)value=49"
+                                               onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^0-9]/g,'0')}else{this.value=this.value.replace(/\D/g,'')}if(this.value> 49)value=49"/>
+                                    </label>
+                                </th>
+                                <th width="20%">
+                                    <div style="position: relative;">
+                                        <label>
+                                            <input type="text" name="price" value="" maxlength="6" onclick="showPrice(this)" onchange="setTotalAmount(this)"
+                                                   onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^0-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}if(this.value){$(this).parent().next().hide()}else{$(this).parent().next().show()}"
+                                                   onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^0-9]/g,'0')}else{this.value=this.value.replace(/\D/g,'')}"/>
+                                        </label>
+                                        <div class="quick-fill-options" style="display: none">
+                                            <div data-value="1">1元</div>
+                                            <div data-value="5">5元</div>
+                                            <div data-value="10">10元</div>
+                                            <div data-value="20">20元</div>
+                                            <div data-value="50">50元</div>
+                                            <div data-value="100">100元</div>
+                                            <div data-value="500">500元</div>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th width="30%">
+                                    <i class="icon iconfont addItem" onclick="addItem(this)">&#xe738;</i>
+                                    <i class="icon iconfont" onclick="deleteItem(this)">&#xe737;</i>
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="edit">
+                        <textarea style="width: 99%;height:50px" onchange="codeString(this)" placeholder="快速输入，例子：单5元;红波5元;金5元;1头5元;1尾5元猴5元;01-03-10各5元02-04各10元;01,03,10 5;02,04 10;"></textarea>
+                    </div>
+                    <div class="edit-bottom">
+                        <span class="check-bottom check-one">单</span>
+                        <span class="check-bottom check-one">双</span>
+                        <span class="check-bottom check-one">红波</span>
+                        <span class="check-bottom check-one">绿波</span>
+                        <span class="check-bottom check-one">蓝波</span>
+                        <span class="check-bottom check-many">金</span>
+                        <span class="check-bottom check-many">木</span>
+                        <span class="check-bottom check-many">水</span>
+                        <span class="check-bottom check-many">火</span>
+                        <span class="check-bottom check-many">土</span>
+                        <span class="check-bottom check-many">0头</span>
+                        <span class="check-bottom check-many">1头</span>
+                        <span class="check-bottom check-many">2头</span>
+                        <span class="check-bottom check-many">3头</span>
+                        <span class="check-bottom check-many">4头</span>
+                        <span class="check-bottom check-many">0尾</span>
+                        <span class="check-bottom check-many">1尾</span>
+                        <span class="check-bottom check-many">2尾</span>
+                        <span class="check-bottom check-many">3尾</span>
+                        <span class="check-bottom check-many">4尾</span>
+                        <span class="check-bottom check-many">5尾</span>
+                        <span class="check-bottom check-many">6尾</span>
+                        <span class="check-bottom check-many">7尾</span>
+                        <span class="check-bottom check-many">8尾</span>
+                        <span class="check-bottom check-many">9尾</span>
+                        <span class="check-bottom check-many">鼠</span>
+                        <span class="check-bottom check-many">牛</span>
+                        <span class="check-bottom check-many">虎</span>
+                        <span class="check-bottom check-many">兔</span>
+                        <span class="check-bottom check-many">龙</span>
+                        <span class="check-bottom check-many">蛇</span>
+                        <span class="check-bottom check-many">马</span>
+                        <span class="check-bottom check-many">羊</span>
+                        <span class="check-bottom check-many">猴</span>
+                        <span class="check-bottom check-many">鸡</span>
+                        <span class="check-bottom check-many">狗</span>
+                        <span class="check-bottom check-many">猪</span>
+                        <span class="check-bottom check-one" data-value="10">10码</span>
+                        <span class="check-bottom check-one" data-value="20">20码</span>
+                        <span class="check-bottom check-one" data-value="30">30码</span>
+                        <span class="check-bottom check-clear">清空</span>
+                        <span class="check-bottom check-confirm">确定</span>
+                    </div>
+                    <div class="edit">
+                            <span>共<span id="totalPour">0</span>注，共：<span id="totalAmount">0</span>元</span>
+                            <a href="#" class="btn-a" onclick="pay()" style="width: 25%;margin-left: 2em">确认投注</a>
+                    </div>
+                </div>
+            </div>
+            <div class="body swiper-slide" id="record">
+                <header>
+                    <p><a class="iconfont title-left" href="#">&#xe669;</a>投注列表<a class="iconfont title-right" href="#">&#xe66a;</a></p>
+                </header>
+                <div class="content">
+                    <ul>
+                        <li>
+                            <span style="width: 20%">期数</span>
+                            <span style="width: 26%">开奖时间</span>
+                            <span style="width: 18%">特码</span>
+                            <span style="width: 18%">结果</span>
+                            <span style="width: 18%">操作</span>
+                        </li>
+                    </ul>
+                    <ul class="data-list">
+
+                    </ul>
+                </div>
+            </div>
+            <div class="body bill swiper-slide" id="bill_report">
+                <header>
+                    <p><a class="iconfont title-left" href="#">&#xe669;</a>总账单<a class="iconfont title-right" href="#">&#xe66a;</a></p>
+                </header>
+                <div class="content">
+                </div>
+                <div hidden>
+                    <button type="button" class="btn recharge" onclick="rechargeCash()">充值</button>
+                    <button type="button" class="btn withdrawal" onclick="withdrawalCash()">提现</button>
+                </div>
+            </div>
+            <div class="body bill swiper-slide" id="bill">
+                <header>
+                    <p><a class="iconfont title-left" href="#">&#xe669;</a>账单明细<a class="iconfont title-right" href="#">&#xe66a;</a></p>
+                </header>
+                <div class="content">
+                    <ul>
+                        <li>
+                            <span style="width: 20%;">交易类型</span>
+                            <span style="width: 20%;">交易金额</span>
+                            <span style="width: 45%;">交易时间</span>
+                            <span style="width: 15%;">操作</span>
+                        </li>
+                    </ul>
+                    <ul class="data-list">
+
+                    </ul>
+                </div>
+            </div>
+            <div class="body swiper-slide" id="person">
+                <header>
+                    <p><a class="iconfont title-left" href="#">&#xe669;</a>个人中心</p>
+                </header>
+                <div class="content">
+                    <div class="detail">
+                        <img src="" onclick="imgChange()" id="picture">
+                        <input style="display: none;" type="file" id="pictureFile">
+                        <p id="account">账号</p>
+                    </div>
+                    <div class="edit">
+                        <span>密码：</span><input type="text" class="personV" name="password" maxlength="6">
+                    </div>
+                    <div class="edit">
+                        <span>姓名：</span><input type="text" class="personV" name="name" maxlength="20">
+                    </div>
+                    <div class="edit">
+                        <span style="margin-right: 58px">性别：</span>
+                        男
+                        <input type="radio" name="sex" value="男" style="margin-right: 50px">
+                        女
+                        <input type="radio" name="sex" value="女" style="margin-right: 68px">
+                    </div>
+                    <div class="edit">
+                        <span>身份证：</span><input class="personV" type="text" name="idCard" maxlength="20">
+                    </div>
+                    <div class="edit">
+                        <span>余额：</span><span id="cash" class="personV">0</span>
+                    </div>
+                    <div class="person-save">
+                        <a href="#" class="btn-a" onclick="save()">保存</a>
+                    </div>
+                    <div class="login-out">
+                        <a href="#" class="btn-a" onclick="logout(event)">退出</a>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </div>
+    <div class="navbar">
+        <a href="#" class="acctive" data-value="0">投注</a>
+        <a href="#" data-value="1">列表</a>
+        <a href="#" data-value="2">账单</a>
+        <a href="#" data-value="4">个人</a>
+    </div>
+</div>
+<script type="text/template" id="detil">
+    {{each list item j}}
+    <li>
+        <span style="width: 20%">{{item.name}}</span>
+        <span style="width: 26%">{{item.date}}</span>
+        <span style="width: 18%">{{item.shengxiao}}{{item.code}}</span>
+        <span style="width: 18%">{{item.code?(item.price?'中'+item.price+'元':'未中奖'):'未开奖'}}</span>
+        <span style="width: 18%"><a href="#" onclick="showDeil(this)">展开</a></span>
+    </li>
+    <div class="info">
+        <span class="detil">总金额：{{item.total}}元</span>
+        {{if !item.code}}<span class="detil"><a href="#" onclick="delOrder(this,'{{item.id}}')">退单</a></span>{{/if}}<br>
+        <span class="detil">投注时间：{{item.orderTime}}</span>
+        <span><a href="#" class="oder-by">排序</a></span>
+        <table cellspacing="0">
+            <tr>
+                <td width="13%">特码</td>
+                <td width="17%">金额</td>
+                <td width="5%"></td>
+                <td width="13%">特码</td>
+                <td width="17%">金额</td>
+                <td width="5%"></td>
+                <td width="13%">特码</td>
+                <td width="17%">金额</td>
+            </tr>
+        {{each item.list v i}}
+            <tr class="code">
+                <td>{{v.shengxiao1}}{{v.code1}}</td>
+                <td>{{v.price1}}</td>
+                <td></td>
+                <td>{{v.shengxiao2}}{{v.code2}}</td>
+                <td>{{v.price2}}</td>
+                <td></td>
+                <td>{{v.shengxiao3}}{{v.code3}}</td>
+                <td>{{v.price3}}</td>
+            </tr>
+        {{/each}}
+        {{each item.list2 v i}}
+        <tr class="shengxiao" hidden>
+            <td>{{v.shengxiao1}}{{v.code1}}</td>
+            <td>{{v.price1}}</td>
+            <td></td>
+            <td>{{v.shengxiao2}}{{v.code2}}</td>
+            <td>{{v.price2}}</td>
+            <td></td>
+            <td>{{v.shengxiao3}}{{v.code3}}</td>
+            <td>{{v.price3}}</td>
+        </tr>
+        {{/each}}
+        </table>
+    </div>
+    {{/each}}
+</script>
+<script type="text/template" id="billList">
+    {{each list v i}}
+    <li>
+        <span style="width: 20%;">{{v.type=='1'?'充值':(v.type=='2'?'投注':(v.type=='3'?'退单':(v.type=='4'?'中奖':'提现')))}}</span>
+        <span style="width: 20%;">{{v.price}}</span>
+        <span style="width: 45%;">{{v.date}}</span>
+        <span style="width: 15%;"><a href="#" onclick="showDeil(this)">展开</a></span>
+    </li>
+    <div class="info">
+        <span class="detil">交易前余额：{{v.bala}}</span>
+        <span class="detil">交易后余额：{{v.cash}}</span>
+    </div>
+    {{/each}}
+</script>
+<script type="text/template" id="billReportList">
+    <ul>
+        <li>
+            <span style="width: 25%;">交易类型</span>
+            <span style="width: 25%;">交易金额</span>
+            <span style="width: 25%;">交易类型</span>
+            <span style="width: 25%;">交易金额</span>
+        </li>
+        <li>
+            <span style="width: 25%;">充值</span>
+            <span style="width: 25%;">{{cz}}</span>
+            <span style="width: 25%;">提现</span>
+            <span style="width: 25%;">{{tx}}</span>
+        </li>
+        <li>
+            <span style="width: 25%;">投注</span>
+            <span style="width: 25%;">{{xd}}</span>
+            <span style="width: 25%;">退单</span>
+            <span style="width: 25%;">{{td}}</span>
+        </li>
+        <li>
+            <span style="width: 25%;">中奖</span>
+            <span style="width: 25%;">{{zj}}</span>
+            <span style="width: 25%;">余额</span>
+            <span style="width: 25%;">{{cash}}</span>
+        </li>
+    <ul>
+    </ul>
+        <li>
+            <span style="width: 25%;">统计</span>
+            <span style="width: 25%;"></span>
+            <span style="width: 25%;"></span>
+            <span style="width: 25%;"></span>
+        </li>
+        <li>
+            <span style="width: 25%;">总投注</span>
+            <span style="width: 25%;">{{xd-td}}</span>
+            <span style="width: 25%;">未开奖投注</span>
+            <span style="width: 25%;">{{xd-td-zc}}</span>
+        </li>
+        <li>
+            <span style="width: 25%;">总支出</span>
+            <span style="width: 25%;">{{zc}}</span>
+            <span style="width: 25%;">总收入</span>
+            <span style="width: 25%;">{{sr}}</span>
+        </li>
+        <li>
+            <span style="width: 25%;">总盈利</span>
+            <span style="width: 25%;">{{sr-zc}}</span>
+            <span style="width: 25%;"></span>
+            <span style="width: 25%;"></span>
+        </li>
+    </ul>
+</script>
+</body>
+<script type="text/javascript" src="/js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="/js/com.js"></script>
+v<script type="text/javascript" src="/js/app/index.js?t=1"></script>
+<script type="text/javascript" src="/js/layer/layer.js"></script>
+<script type="text/javascript" src="/js/template-web.js"></script>
+<script type="text/javascript" src="/css/iconfont/iconfont.js"></script>
+<script type="text/javascript" src="/js/compressUtil.js"></script>
+<script type="text/javascript" src="/js/dropload/dropload.min.js"></script>
+<script type="text/javascript" src="/js/dropload/dropload.js"></script>
+<script type="text/javascript" src="/js/swiper4/swiper.min.js"></script>
+<script type="text/javascript" src="/js/swiper4/swiper.animate.min.js"></script>
+</html>

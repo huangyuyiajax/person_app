@@ -1,0 +1,1144 @@
+2024-01-09 11:13:45.228 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 10260 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 11:13:45.268 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 11:13:45.398 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : The Class-Path manifest attribute in D:\repository\xalan\xalan\2.7.0\xalan-2.7.0.jar referenced one or more files that do not exist: file:/D:/repository/xalan/xalan/2.7.0/xercesImpl.jar,file:/D:/repository/xalan/xalan/2.7.0/xml-apis.jar,file:/D:/repository/xalan/xalan/2.7.0/serializer.jar
+2024-01-09 11:13:45.399 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09 11:13:45.399 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09 11:13:52.293 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 11:13:52.317 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 11:13:52.318 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 11:13:52.318 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 11:13:52.472 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 11:13:52.472 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7073 ms
+2024-01-09 11:13:54.813 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 11:13:55.500 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'taskScheduler'
+2024-01-09 11:13:55.617 - INFO []   [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-01-09 11:13:55.636 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2024-01-09 11:13:55.690 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-09 11:13:55.745 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Started PersonApplication in 12.125 seconds (JVM running for 20.926)
+2024-01-09 11:14:00.019 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:14:00
+2024-01-09 11:14:00.064 - INFO []   [   scheduling-1] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2024-01-09 11:14:01.229 - INFO []   [   scheduling-1] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2024-01-09 11:14:01.398 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:14:01
+2024-01-09 11:14:12.671 - INFO []   [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : A cookie header was received [1701223120,1702348105,1702386012; Hm_lvt_0f31e3f991e5ab56193cdec1512552e0=1701223100,1701307394,1701418407,1702387739; Hm_lvt_abe5ea9dd5df65f0d92b49abcf5665b3=1702538308,1704247078,1704434346,1704708451] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-01-09 11:14:12.718 - INFO []   [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09 11:14:12.719 - INFO []   [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2024-01-09 11:14:12.738 - INFO []   [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Completed initialization in 18 ms
+2024-01-09 11:14:15.038 - INFO []   [nio-8080-exec-9] c.a.c.AppActionController      : 登录account:18823768418;password:1;area:0
+2024-01-09 11:15:00.012 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:15:00
+2024-01-09 11:15:00.015 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:15:00
+2024-01-09 11:15:11.722 - INFO []   [nio-8080-exec-4] c.a.c.AppController            : 微信授权code=null;amount=1
+2024-01-09 11:16:01.505 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 5244 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 11:16:01.521 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 11:16:01.622 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : The Class-Path manifest attribute in D:\repository\xalan\xalan\2.7.0\xalan-2.7.0.jar referenced one or more files that do not exist: file:/D:/repository/xalan/xalan/2.7.0/xercesImpl.jar,file:/D:/repository/xalan/xalan/2.7.0/xml-apis.jar,file:/D:/repository/xalan/xalan/2.7.0/serializer.jar
+2024-01-09 11:16:01.623 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09 11:16:01.623 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09 11:16:05.303 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 11:16:05.319 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 11:16:05.319 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 11:16:05.320 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 11:16:05.461 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 11:16:05.461 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3837 ms
+2024-01-09 11:16:06.788 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 11:16:07.173 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'taskScheduler'
+2024-01-09 11:16:07.236 - INFO []   [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-01-09 11:16:07.253 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2024-01-09 11:16:07.298 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-09 11:16:07.320 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Started PersonApplication in 6.64 seconds (JVM running for 11.214)
+2024-01-09 11:16:49.241 - INFO []   [nio-8080-exec-1] o.a.j.l.DirectJDKLog           : A cookie header was received [1701223120,1702348105,1702386012; Hm_lvt_0f31e3f991e5ab56193cdec1512552e0=1701223100,1701307394,1701418407,1702387739; Hm_lvt_abe5ea9dd5df65f0d92b49abcf5665b3=1702538308,1704247078,1704434346,1704708451; JSESSIONID=1D963E3771D4ADD2F859AC5C0FE2B940] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-01-09 11:16:49.255 - INFO []   [nio-8080-exec-1] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09 11:16:49.256 - INFO []   [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2024-01-09 11:16:49.273 - INFO []   [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 16 ms
+2024-01-09 11:16:54.716 - INFO []   [nio-8080-exec-9] c.a.c.AppActionController      : 登录account:18823768418;password:1;area:0
+2024-01-09 11:16:54.766 - INFO []   [nio-8080-exec-9] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2024-01-09 11:16:55.433 - INFO []   [nio-8080-exec-9] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2024-01-09 11:17:00.005 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:17:00
+2024-01-09 11:17:00.012 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:17:00
+2024-01-09 11:18:00.010 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:18:00
+2024-01-09 11:18:00.013 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:18:00
+2024-01-09 11:18:17.471 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 2280 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 11:18:17.487 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 11:18:17.602 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : The Class-Path manifest attribute in D:\repository\xalan\xalan\2.7.0\xalan-2.7.0.jar referenced one or more files that do not exist: file:/D:/repository/xalan/xalan/2.7.0/xercesImpl.jar,file:/D:/repository/xalan/xalan/2.7.0/xml-apis.jar,file:/D:/repository/xalan/xalan/2.7.0/serializer.jar
+2024-01-09 11:18:17.602 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09 11:18:17.602 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09 11:18:21.700 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 11:18:21.718 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 11:18:21.719 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 11:18:21.720 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 11:18:21.866 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 11:18:21.867 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4263 ms
+2024-01-09 11:18:21.946 - WARN []   [  restartedMain] o.a.j.l.DirectJDKLog           : Unable to delete [D:\Temp\D4AB87C78CC9982CB31CF71DEA3322368589E1FD\servlet-sessions\SESSIONS.ser] after reading the persisted sessions. The continued presence of this file may cause future attempts to persist sessions to fail.
+2024-01-09 11:18:23.373 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 11:18:23.798 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'taskScheduler'
+2024-01-09 11:18:23.858 - INFO []   [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-01-09 11:18:23.875 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2024-01-09 11:18:23.914 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-09 11:18:23.935 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Started PersonApplication in 8.081 seconds (JVM running for 12.505)
+2024-01-09 11:19:00.036 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:19:00
+2024-01-09 11:19:00.629 - INFO []   [   scheduling-1] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2024-01-09 11:19:04.021 - INFO []   [   scheduling-1] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2024-01-09 11:19:04.137 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:19:04
+2024-01-09 11:20:00.003 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:20:00
+2024-01-09 11:20:00.006 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:20:00
+2024-01-09 11:21:00.001 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:21:00
+2024-01-09 11:21:00.006 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:21:00
+2024-01-09 11:22:00.008 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:22:00
+2024-01-09 11:22:00.032 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:22:00
+2024-01-09 11:23:00.014 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:23:00
+2024-01-09 11:23:00.016 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:23:00
+2024-01-09 11:24:00.012 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:24:00
+2024-01-09 11:24:00.014 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:24:00
+2024-01-09 11:25:00.016 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:25:00
+2024-01-09 11:25:00.021 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:25:00
+2024-01-09 11:26:00.009 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:26:00
+2024-01-09 11:26:00.012 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:26:00
+2024-01-09 11:27:00.015 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:27:00
+2024-01-09 11:27:00.018 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:27:00
+2024-01-09 11:28:00.012 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:28:00
+2024-01-09 11:28:00.015 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:28:00
+2024-01-09 11:29:00.012 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:29:00
+2024-01-09 11:29:00.015 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:29:00
+2024-01-09 11:30:00.004 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:30:00
+2024-01-09 11:30:00.008 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:30:00
+2024-01-09 11:31:00.005 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:31:00
+2024-01-09 11:31:00.008 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:31:00
+2024-01-09 11:32:00.015 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:32:00
+2024-01-09 11:32:00.018 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:32:00
+2024-01-09 11:33:00.007 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:33:00
+2024-01-09 11:33:00.031 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:33:00
+2024-01-09 11:34:00.005 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:34:00
+2024-01-09 11:34:00.013 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:34:00
+2024-01-09 11:35:00.003 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:35:00
+2024-01-09 11:35:00.006 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:35:00
+2024-01-09 11:36:00.007 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:36:00
+2024-01-09 11:36:00.010 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:36:00
+2024-01-09 11:37:00.013 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:37:00
+2024-01-09 11:37:00.017 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:37:00
+2024-01-09 11:38:00.004 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:38:00
+2024-01-09 11:38:00.008 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:38:00
+2024-01-09 11:39:00.014 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:39:00
+2024-01-09 11:39:00.020 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:39:00
+2024-01-09 11:40:00.013 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:40:00
+2024-01-09 11:40:00.018 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:40:00
+2024-01-09 11:41:00.007 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:41:00
+2024-01-09 11:41:00.029 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:41:00
+2024-01-09 11:42:00.003 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:42:00
+2024-01-09 11:42:00.007 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:42:00
+2024-01-09 11:43:00.007 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:43:00
+2024-01-09 11:43:00.012 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:43:00
+2024-01-09 11:44:00.044 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:44:00
+2024-01-09 11:48:10.014 - WARN []   [l-1 housekeeper] c.z.h.p.HikariPool$HouseKeeper : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m34s691ms868µs200ns).
+2024-01-09 11:48:10.016 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:48:10
+2024-01-09 11:48:29.873 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 10804 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 11:48:29.890 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 11:48:30.067 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : The Class-Path manifest attribute in D:\repository\xalan\xalan\2.7.0\xalan-2.7.0.jar referenced one or more files that do not exist: file:/D:/repository/xalan/xalan/2.7.0/xercesImpl.jar,file:/D:/repository/xalan/xalan/2.7.0/xml-apis.jar,file:/D:/repository/xalan/xalan/2.7.0/serializer.jar
+2024-01-09 11:48:30.068 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09 11:48:30.069 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09 11:48:34.540 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 11:48:34.559 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 11:48:34.559 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 11:48:34.560 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 11:48:34.702 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 11:48:34.702 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4633 ms
+2024-01-09 11:48:35.159 - WARN []   [  restartedMain] o.a.j.l.DirectJDKLog           : Unable to delete [D:\Temp\D4AB87C78CC9982CB31CF71DEA3322368589E1FD\servlet-sessions\SESSIONS.ser] after reading the persisted sessions. The continued presence of this file may cause future attempts to persist sessions to fail.
+2024-01-09 11:48:36.629 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 11:48:36.983 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'taskScheduler'
+2024-01-09 11:48:37.048 - INFO []   [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-01-09 11:48:37.065 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2024-01-09 11:48:37.101 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-09 11:48:37.121 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Started PersonApplication in 8.77 seconds (JVM running for 13.541)
+2024-01-09 11:48:57.202 - INFO []   [nio-8080-exec-3] o.a.j.l.DirectJDKLog           : A cookie header was received [1701223120,1702348105,1702386012; Hm_lvt_0f31e3f991e5ab56193cdec1512552e0=1701223100,1701307394,1701418407,1702387739; Hm_lvt_abe5ea9dd5df65f0d92b49abcf5665b3=1702538308,1704247078,1704434346,1704708451; JSESSIONID=7C856C695293E6F5304475E89C051D1F] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-01-09 11:48:57.217 - INFO []   [nio-8080-exec-3] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09 11:48:57.217 - INFO []   [nio-8080-exec-3] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2024-01-09 11:48:57.231 - INFO []   [nio-8080-exec-3] o.s.w.s.FrameworkServlet       : Completed initialization in 14 ms
+2024-01-09 11:48:59.054 - INFO []   [nio-8080-exec-8] c.a.c.AppActionController      : 登录account:18823768418;password:1;area:0
+2024-01-09 11:48:59.103 - INFO []   [nio-8080-exec-8] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2024-01-09 11:48:59.785 - INFO []   [nio-8080-exec-8] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2024-01-09 11:49:00.040 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:49:00
+2024-01-09 11:49:00.114 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:49:00
+2024-01-09 11:49:05.598 - INFO []   [nio-8080-exec-4] c.a.c.PayController            : 微信授权code=null;amount=12
+2024-01-09 11:50:00.009 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:50:00
+2024-01-09 11:50:00.013 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:50:00
+2024-01-09 11:51:00.006 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:51:00
+2024-01-09 11:51:00.010 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:51:00
+2024-01-09 11:52:00.006 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:52:00
+2024-01-09 11:52:00.010 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:52:00
+2024-01-09 11:58:11.551 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 2652 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 11:58:11.568 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 11:58:11.687 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : The Class-Path manifest attribute in D:\repository\xalan\xalan\2.7.0\xalan-2.7.0.jar referenced one or more files that do not exist: file:/D:/repository/xalan/xalan/2.7.0/xercesImpl.jar,file:/D:/repository/xalan/xalan/2.7.0/xml-apis.jar,file:/D:/repository/xalan/xalan/2.7.0/serializer.jar
+2024-01-09 11:58:11.688 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09 11:58:11.688 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09 11:58:15.200 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 11:58:15.217 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 11:58:15.218 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 11:58:15.218 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 11:58:15.367 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 11:58:15.367 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3679 ms
+2024-01-09 11:58:15.478 - WARN []   [  restartedMain] o.a.j.l.DirectJDKLog           : Unable to delete [D:\Temp\D4AB87C78CC9982CB31CF71DEA3322368589E1FD\servlet-sessions\SESSIONS.ser] after reading the persisted sessions. The continued presence of this file may cause future attempts to persist sessions to fail.
+2024-01-09 11:58:17.326 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 11:58:18.339 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'taskScheduler'
+2024-01-09 11:58:18.438 - INFO []   [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-01-09 11:58:18.461 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2024-01-09 11:58:18.530 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-09 11:58:18.596 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Started PersonApplication in 7.766 seconds (JVM running for 15.307)
+2024-01-09 11:58:31.287 - INFO []   [nio-8080-exec-1] o.a.j.l.DirectJDKLog           : A cookie header was received [1701223120,1702348105,1702386012; Hm_lvt_0f31e3f991e5ab56193cdec1512552e0=1701223100,1701307394,1701418407,1702387739; Hm_lvt_abe5ea9dd5df65f0d92b49abcf5665b3=1702538308,1704247078,1704434346,1704708451; JSESSIONID=05B6B7491C778EE222B2DC8217FA5115] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-01-09 11:58:31.301 - INFO []   [nio-8080-exec-1] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09 11:58:31.301 - INFO []   [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2024-01-09 11:58:31.312 - INFO []   [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 10 ms
+2024-01-09 11:58:34.628 - INFO []   [nio-8080-exec-7] c.a.c.AppActionController      : 登录account:18823768418;password:1;area:0
+2024-01-09 11:58:34.679 - INFO []   [nio-8080-exec-7] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2024-01-09 11:58:35.321 - INFO []   [nio-8080-exec-7] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2024-01-09 11:58:39.743 - INFO []   [nio-8080-exec-6] c.a.c.AppController            : 微信授权code=null;amount=1
+2024-01-09 11:58:57.283 - INFO []   [nio-8080-exec-2] c.a.c.AppController            : 微信授权code=null;amount=12
+2024-01-09 11:59:00.021 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 11:59:00
+2024-01-09 11:59:00.029 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 11:59:00
+2024-01-09 12:00:00.005 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 12:00:00
+2024-01-09 12:00:00.008 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 12:00:00
+2024-01-09 12:01:00.027 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 12:01:00
+2024-01-09 12:01:00.044 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 12:01:00
+2024-01-09 12:02:00.011 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 12:02:00
+2024-01-09 12:02:00.016 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 12:02:00
+2024-01-09 12:03:01.347 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 12416 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 12:03:01.363 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 12:03:01.469 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : The Class-Path manifest attribute in D:\repository\xalan\xalan\2.7.0\xalan-2.7.0.jar referenced one or more files that do not exist: file:/D:/repository/xalan/xalan/2.7.0/xercesImpl.jar,file:/D:/repository/xalan/xalan/2.7.0/xml-apis.jar,file:/D:/repository/xalan/xalan/2.7.0/serializer.jar
+2024-01-09 12:03:01.469 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09 12:03:01.470 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09 12:03:04.901 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 12:03:04.918 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 12:03:04.919 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 12:03:04.919 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 12:03:05.048 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 12:03:05.048 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3578 ms
+2024-01-09 12:03:05.132 - WARN []   [  restartedMain] o.a.j.l.DirectJDKLog           : Unable to delete [D:\Temp\D4AB87C78CC9982CB31CF71DEA3322368589E1FD\servlet-sessions\SESSIONS.ser] after reading the persisted sessions. The continued presence of this file may cause future attempts to persist sessions to fail.
+2024-01-09 12:03:06.327 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 12:03:06.709 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'taskScheduler'
+2024-01-09 12:03:06.776 - INFO []   [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-01-09 12:03:06.793 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2024-01-09 12:03:06.833 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-09 12:03:06.857 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Started PersonApplication in 6.83 seconds (JVM running for 12.046)
+2024-01-09 12:03:17.407 - INFO []   [nio-8080-exec-1] o.a.j.l.DirectJDKLog           : A cookie header was received [1701223120,1702348105,1702386012; Hm_lvt_0f31e3f991e5ab56193cdec1512552e0=1701223100,1701307394,1701418407,1702387739; Hm_lvt_abe5ea9dd5df65f0d92b49abcf5665b3=1702538308,1704247078,1704434346,1704708451; JSESSIONID=1F834C7A443469C6F16D21CD67E8FA42] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-01-09 12:03:17.422 - INFO []   [nio-8080-exec-1] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09 12:03:17.423 - INFO []   [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2024-01-09 12:03:17.438 - INFO []   [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 15 ms
+2024-01-09 12:03:19.588 - INFO []   [nio-8080-exec-7] c.a.c.AppActionController      : 登录account:18823768418;password:1;area:0
+2024-01-09 12:03:19.637 - INFO []   [nio-8080-exec-7] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2024-01-09 12:03:20.262 - INFO []   [nio-8080-exec-7] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2024-01-09 12:03:24.830 - INFO []   [nio-8080-exec-1] c.a.c.AppController            : 微信授权code=null;amount=1
+2024-01-09 12:03:32.023 - INFO []   [nio-8080-exec-4] c.a.c.AppController            : 微信授权code=null;amount=1
+2024-01-09 12:04:00.018 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 12:04:00
+2024-01-09 12:04:00.027 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 12:04:00
+2024-01-09 12:05:00.013 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 12:05:00
+2024-01-09 12:05:00.015 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 12:05:00
+2024-01-09 12:06:00.015 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 12:06:00
+2024-01-09 12:06:00.018 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 12:06:00
+2024-01-09 12:06:42.918 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 7436 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 12:06:42.941 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 12:06:43.041 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : The Class-Path manifest attribute in D:\repository\xalan\xalan\2.7.0\xalan-2.7.0.jar referenced one or more files that do not exist: file:/D:/repository/xalan/xalan/2.7.0/xercesImpl.jar,file:/D:/repository/xalan/xalan/2.7.0/xml-apis.jar,file:/D:/repository/xalan/xalan/2.7.0/serializer.jar
+2024-01-09 12:06:43.042 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09 12:06:43.042 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09 12:06:46.355 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 12:06:46.370 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 12:06:46.370 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 12:06:46.371 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 12:06:46.529 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 12:06:46.530 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3487 ms
+2024-01-09 12:06:46.607 - WARN []   [  restartedMain] o.a.j.l.DirectJDKLog           : Unable to delete [D:\Temp\D4AB87C78CC9982CB31CF71DEA3322368589E1FD\servlet-sessions\SESSIONS.ser] after reading the persisted sessions. The continued presence of this file may cause future attempts to persist sessions to fail.
+2024-01-09 12:06:47.709 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 12:06:48.072 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'taskScheduler'
+2024-01-09 12:06:48.137 - INFO []   [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-01-09 12:06:48.154 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2024-01-09 12:06:48.193 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-09 12:06:48.216 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Started PersonApplication in 6.18 seconds (JVM running for 9.955)
+2024-01-09 12:07:00.013 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 12:07:00
+2024-01-09 12:07:00.047 - INFO []   [   scheduling-1] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2024-01-09 12:07:00.633 - INFO []   [   scheduling-1] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2024-01-09 12:07:00.713 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 12:07:00
+2024-01-09 12:07:34.067 - INFO []   [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : A cookie header was received [1701223120,1702348105,1702386012; Hm_lvt_0f31e3f991e5ab56193cdec1512552e0=1701223100,1701307394,1701418407,1702387739; Hm_lvt_abe5ea9dd5df65f0d92b49abcf5665b3=1702538308,1704247078,1704434346,1704708451; JSESSIONID=DE0BFF4524C6CBDB08D9A2F099DE0D37] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-01-09 12:07:34.083 - INFO []   [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09 12:07:34.083 - INFO []   [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2024-01-09 12:07:34.105 - INFO []   [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Completed initialization in 22 ms
+2024-01-09 12:07:35.743 - INFO []   [nio-8080-exec-7] c.a.c.AppActionController      : 登录account:18823768418;password:1;area:0
+2024-01-09 12:07:39.627 - INFO []   [io-8080-exec-10] c.a.c.AppController            : 微信授权code=null;amount=1
+2024-01-09 12:08:00.002 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 12:08:00
+2024-01-09 12:08:00.005 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 12:08:00
+2024-01-09 12:08:35.438 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 120 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 12:08:35.457 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 12:08:35.574 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : The Class-Path manifest attribute in D:\repository\xalan\xalan\2.7.0\xalan-2.7.0.jar referenced one or more files that do not exist: file:/D:/repository/xalan/xalan/2.7.0/xercesImpl.jar,file:/D:/repository/xalan/xalan/2.7.0/xml-apis.jar,file:/D:/repository/xalan/xalan/2.7.0/serializer.jar
+2024-01-09 12:08:35.575 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09 12:08:35.575 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09 12:08:39.359 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 12:08:39.376 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 12:08:39.376 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 12:08:39.377 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 12:08:39.540 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 12:08:39.540 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3964 ms
+2024-01-09 12:08:39.628 - WARN []   [  restartedMain] o.a.j.l.DirectJDKLog           : Unable to delete [D:\Temp\D4AB87C78CC9982CB31CF71DEA3322368589E1FD\servlet-sessions\SESSIONS.ser] after reading the persisted sessions. The continued presence of this file may cause future attempts to persist sessions to fail.
+2024-01-09 12:08:40.866 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 12:08:41.228 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'taskScheduler'
+2024-01-09 12:08:41.299 - INFO []   [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-01-09 12:08:41.320 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2024-01-09 12:08:41.361 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-09 12:08:41.380 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Started PersonApplication in 7.496 seconds (JVM running for 12.423)
+2024-01-09 12:08:53.733 - INFO []   [nio-8080-exec-3] o.a.j.l.DirectJDKLog           : A cookie header was received [1701223120,1702348105,1702386012; Hm_lvt_0f31e3f991e5ab56193cdec1512552e0=1701223100,1701307394,1701418407,1702387739; Hm_lvt_abe5ea9dd5df65f0d92b49abcf5665b3=1702538308,1704247078,1704434346,1704708451; JSESSIONID=ED7D876B2C2E92B64DA61FC99C0CD58F] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-01-09 12:08:53.746 - INFO []   [nio-8080-exec-3] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09 12:08:53.747 - INFO []   [nio-8080-exec-3] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2024-01-09 12:08:53.763 - INFO []   [nio-8080-exec-3] o.s.w.s.FrameworkServlet       : Completed initialization in 16 ms
+2024-01-09 12:08:55.628 - INFO []   [nio-8080-exec-7] c.a.c.AppActionController      : 登录account:18823768418;password:1;area:0
+2024-01-09 12:08:55.682 - INFO []   [nio-8080-exec-7] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2024-01-09 12:08:56.300 - INFO []   [nio-8080-exec-7] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2024-01-09 12:09:00.014 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 12:09:00
+2024-01-09 12:09:00.021 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 12:09:00
+2024-01-09 12:09:00.153 - INFO []   [nio-8080-exec-9] c.a.c.AppController            : 微信授权code=null;amount=1
+2024-01-09 12:09:49.749 - INFO []   [io-8080-exec-10] c.a.c.AppController            : 微信授权code=null;amount=1
+2024-01-09 12:10:00.024 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 12:10:00
+2024-01-09 12:10:00.041 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 12:10:00
+2024-01-09 14:06:27.207 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 9140 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 14:06:27.223 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 14:06:27.311 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : The Class-Path manifest attribute in D:\repository\xalan\xalan\2.7.0\xalan-2.7.0.jar referenced one or more files that do not exist: file:/D:/repository/xalan/xalan/2.7.0/xercesImpl.jar,file:/D:/repository/xalan/xalan/2.7.0/xml-apis.jar,file:/D:/repository/xalan/xalan/2.7.0/serializer.jar
+2024-01-09 14:06:27.311 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09 14:06:27.312 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09 14:06:30.696 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 14:06:30.716 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 14:06:30.717 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 14:06:30.718 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 14:06:30.889 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 14:06:30.889 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3577 ms
+2024-01-09 14:06:30.977 - WARN []   [  restartedMain] o.a.j.l.DirectJDKLog           : Unable to delete [D:\Temp\D4AB87C78CC9982CB31CF71DEA3322368589E1FD\servlet-sessions\SESSIONS.ser] after reading the persisted sessions. The continued presence of this file may cause future attempts to persist sessions to fail.
+2024-01-09 14:06:32.171 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 14:06:32.514 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'taskScheduler'
+2024-01-09 14:06:32.576 - INFO []   [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-01-09 14:06:32.592 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2024-01-09 14:06:32.630 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-09 14:06:32.652 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Started PersonApplication in 6.238 seconds (JVM running for 12.357)
+2024-01-09 14:07:00.011 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 14:07:00
+2024-01-09 14:07:00.050 - INFO []   [   scheduling-1] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2024-01-09 14:07:00.643 - INFO []   [   scheduling-1] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2024-01-09 14:07:00.724 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 14:07:00
+2024-01-09 14:08:07.324 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 12252 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 14:08:07.349 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 14:08:07.452 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : The Class-Path manifest attribute in D:\repository\xalan\xalan\2.7.0\xalan-2.7.0.jar referenced one or more files that do not exist: file:/D:/repository/xalan/xalan/2.7.0/xercesImpl.jar,file:/D:/repository/xalan/xalan/2.7.0/xml-apis.jar,file:/D:/repository/xalan/xalan/2.7.0/serializer.jar
+2024-01-09 14:08:07.453 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09 14:08:07.456 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09 14:08:14.371 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 14:08:14.388 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 14:08:14.389 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 14:08:14.389 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 14:08:14.538 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 14:08:14.539 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7082 ms
+2024-01-09 14:08:14.613 - WARN []   [  restartedMain] o.a.j.l.DirectJDKLog           : Unable to delete [D:\Temp\D4AB87C78CC9982CB31CF71DEA3322368589E1FD\servlet-sessions\SESSIONS.ser] after reading the persisted sessions. The continued presence of this file may cause future attempts to persist sessions to fail.
+2024-01-09 14:08:15.894 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 14:08:16.313 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'taskScheduler'
+2024-01-09 14:08:16.387 - INFO []   [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-01-09 14:08:16.402 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2024-01-09 14:08:16.450 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-09 14:08:16.479 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Started PersonApplication in 10.369 seconds (JVM running for 14.402)
+2024-01-09 14:09:00.013 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 14:09:00
+2024-01-09 14:09:00.052 - INFO []   [   scheduling-1] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2024-01-09 14:09:00.659 - INFO []   [   scheduling-1] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2024-01-09 14:09:00.738 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 14:09:00
+2024-01-09 14:09:07.138 - INFO []   [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : A cookie header was received [1701223120,1702348105,1702386012; Hm_lvt_0f31e3f991e5ab56193cdec1512552e0=1701223100,1701307394,1701418407,1702387739; Hm_lvt_abe5ea9dd5df65f0d92b49abcf5665b3=1702538308,1704247078,1704434346,1704708451; JSESSIONID=7AA8EBB7F9478A8BA2B1EE9E02A0D322] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-01-09 14:09:07.163 - INFO []   [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09 14:09:07.163 - INFO []   [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2024-01-09 14:09:07.178 - INFO []   [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Completed initialization in 14 ms
+2024-01-09 14:09:08.516 - INFO []   [nio-8080-exec-7] c.a.c.AppActionController      : 登录account:18823768418;password:1;area:0
+2024-01-09 14:09:16.324 - INFO []   [nio-8080-exec-5] c.a.c.AppController            : 微信授权code=null;amount=1
+2024-01-09 14:09:17.560 - INFO []   [nio-8080-exec-4] c.a.s.i.PayServiceImpl         : 提现入参：{amount=1, desc=账户提现, openid=1, partner_trade_no=e0af6a1d23384421b14c633163b4ae44, spbill_create_ip=0:0:0:0:0:0:0:1}
+2024-01-09 14:09:18.042 - INFO []   [nio-8080-exec-4] c.a.w.s.WXPayReport            : report worker num: 6
+2024-01-09 14:09:18.046 - INFO []   [nio-8080-exec-4] c.a.w.s.WXPayReport            : report v1,WXPaySDK/3.0.9,ycVh4poVwi9lJt7hPuRvK643xJWqTAGB,1704780558,407,api.mch.weixin.qq.com,false,6000,8000,0,0,0,F67E2D23CA96356B6B77736D95C14590071490433561CE8987772F0CFC5DD5E1
+2024-01-09 14:09:18.046 - INFO []   [pool-2-thread-1] c.a.w.s.WXPayReport$2          : get first report msg: v1,WXPaySDK/3.0.9,ycVh4poVwi9lJt7hPuRvK643xJWqTAGB,1704780558,407,api.mch.weixin.qq.com,false,6000,8000,0,0,0,F67E2D23CA96356B6B77736D95C14590071490433561CE8987772F0CFC5DD5E1
+2024-01-09 14:09:18.047 - INFO []   [pool-2-thread-1] c.a.w.s.WXPayReport$2          : try get remain report msg
+2024-01-09 14:10:00.016 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 14:10:00
+2024-01-09 14:10:00.019 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 14:10:00
+2024-01-09 14:10:55.758 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 11884 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 14:10:55.781 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 14:10:55.902 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : The Class-Path manifest attribute in D:\repository\xalan\xalan\2.7.0\xalan-2.7.0.jar referenced one or more files that do not exist: file:/D:/repository/xalan/xalan/2.7.0/xercesImpl.jar,file:/D:/repository/xalan/xalan/2.7.0/xml-apis.jar,file:/D:/repository/xalan/xalan/2.7.0/serializer.jar
+2024-01-09 14:10:55.902 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09 14:10:55.903 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09 14:10:59.373 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 14:10:59.388 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 14:10:59.389 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 14:10:59.389 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 14:10:59.523 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 14:10:59.524 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3619 ms
+2024-01-09 14:10:59.593 - WARN []   [  restartedMain] o.a.j.l.DirectJDKLog           : Unable to delete [D:\Temp\D4AB87C78CC9982CB31CF71DEA3322368589E1FD\servlet-sessions\SESSIONS.ser] after reading the persisted sessions. The continued presence of this file may cause future attempts to persist sessions to fail.
+2024-01-09 14:11:00.915 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 14:11:01.286 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'taskScheduler'
+2024-01-09 14:11:01.357 - INFO []   [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-01-09 14:11:01.374 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2024-01-09 14:11:01.411 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-09 14:11:01.431 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Started PersonApplication in 6.789 seconds (JVM running for 10.773)
+2024-01-09 14:11:41.249 - INFO []   [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : A cookie header was received [1701223120,1702348105,1702386012; Hm_lvt_0f31e3f991e5ab56193cdec1512552e0=1701223100,1701307394,1701418407,1702387739; Hm_lvt_abe5ea9dd5df65f0d92b49abcf5665b3=1702538308,1704247078,1704434346,1704708451; JSESSIONID=6D3D8F3877F659E241238CD6678B16E8] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-01-09 14:11:41.267 - INFO []   [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09 14:11:41.268 - INFO []   [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2024-01-09 14:11:41.280 - INFO []   [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Completed initialization in 12 ms
+2024-01-09 14:11:43.092 - INFO []   [nio-8080-exec-8] c.a.c.AppActionController      : 登录account:18823768418;password:1;area:0
+2024-01-09 14:11:43.147 - INFO []   [nio-8080-exec-8] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2024-01-09 14:11:43.787 - INFO []   [nio-8080-exec-8] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2024-01-09 14:11:47.568 - INFO []   [nio-8080-exec-4] c.a.c.AppController            : 微信授权code=null;amount=1
+2024-01-09 14:11:48.721 - INFO []   [nio-8080-exec-3] c.a.s.i.PayServiceImpl         : 提现入参：{amount=1, desc=账户提现, openid=o7KFbs-JFnIDBapvFQ0x-e7XvgVU, partner_trade_no=7b443d11cf1e41b1bbea09cbd1d132f7, spbill_create_ip=0:0:0:0:0:0:0:1}
+2024-01-09 14:11:49.222 - INFO []   [nio-8080-exec-3] c.a.w.s.WXPayReport            : report worker num: 6
+2024-01-09 14:11:49.226 - INFO []   [nio-8080-exec-3] c.a.w.s.WXPayReport            : report v1,WXPaySDK/3.0.9,flsYpNMgIBSTKQ3qlkgZpnEmyNqdVQA7,1704780709,422,api.mch.weixin.qq.com,false,6000,8000,0,0,0,E21E0F146637620D0F687DE24DB50EE5F480887B76B0D2FE4DB70CC6D42CA37D
+2024-01-09 14:11:49.227 - INFO []   [pool-2-thread-1] c.a.w.s.WXPayReport$2          : get first report msg: v1,WXPaySDK/3.0.9,flsYpNMgIBSTKQ3qlkgZpnEmyNqdVQA7,1704780709,422,api.mch.weixin.qq.com,false,6000,8000,0,0,0,E21E0F146637620D0F687DE24DB50EE5F480887B76B0D2FE4DB70CC6D42CA37D
+2024-01-09 14:11:49.227 - INFO []   [pool-2-thread-1] c.a.w.s.WXPayReport$2          : try get remain report msg
+2024-01-09 14:12:00.020 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 14:12:00
+2024-01-09 14:12:00.025 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 14:12:00
+2024-01-09 14:12:38.979 - INFO []   [nio-8080-exec-5] c.a.s.i.PayServiceImpl         : 提现入参：{amount=1, desc=账户提现, openid=o7KFbs-JFnIDBapvFQ0x-e7XvgVU, partner_trade_no=444958cc8fe0436990cea28f10bc4778, spbill_create_ip=0:0:0:0:0:0:0:1}
+2024-01-09 14:15:34.731 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 14:15:34
+2024-01-09 14:15:34.731 - WARN []   [l-1 housekeeper] c.z.h.p.HikariPool$HouseKeeper : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m20s760ms278µs900ns).
+2024-01-09 14:15:35.220 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 14:15:35
+2024-01-09 14:15:51.100 - INFO []   [nio-8080-exec-5] c.a.w.s.WXPayReport            : report v1,WXPaySDK/3.0.9,3wE6Pxx0VFxvx6eDzjXTBztGG3RyhexK,1704780951,268,api.mch.weixin.qq.com,false,6000,8000,0,0,0,84FAF3B3548BF4B457A59AC16F2F1C570DDD4B05DCAC2666FDB30B66F97E7B8C
+2024-01-09 14:15:51.102 - INFO []   [pool-3-thread-1] c.a.w.s.WXPayReport$2          : get first report msg: v1,WXPaySDK/3.0.9,3wE6Pxx0VFxvx6eDzjXTBztGG3RyhexK,1704780951,268,api.mch.weixin.qq.com,false,6000,8000,0,0,0,84FAF3B3548BF4B457A59AC16F2F1C570DDD4B05DCAC2666FDB30B66F97E7B8C
+2024-01-09 14:16:11.650 - INFO []   [pool-3-thread-1] c.a.w.s.WXPayReport$2          : try get remain report msg
+2024-01-09 14:16:11.650 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 14:16:11
+2024-01-09 14:16:11.655 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 14:16:11
+2024-01-09 14:30:30.586 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 13992 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 14:30:30.620 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 14:30:30.702 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : The Class-Path manifest attribute in D:\repository\xalan\xalan\2.7.0\xalan-2.7.0.jar referenced one or more files that do not exist: file:/D:/repository/xalan/xalan/2.7.0/xercesImpl.jar,file:/D:/repository/xalan/xalan/2.7.0/xml-apis.jar,file:/D:/repository/xalan/xalan/2.7.0/serializer.jar
+2024-01-09 14:30:30.702 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09 14:30:30.703 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09 14:30:34.361 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 14:30:34.377 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 14:30:34.377 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 14:30:34.378 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 14:30:34.510 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 14:30:34.511 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3807 ms
+2024-01-09 14:30:34.581 - WARN []   [  restartedMain] o.a.j.l.DirectJDKLog           : Unable to delete [D:\Temp\D4AB87C78CC9982CB31CF71DEA3322368589E1FD\servlet-sessions\SESSIONS.ser] after reading the persisted sessions. The continued presence of this file may cause future attempts to persist sessions to fail.
+2024-01-09 14:30:35.681 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 14:30:36.077 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'taskScheduler'
+2024-01-09 14:30:36.142 - INFO []   [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-01-09 14:30:36.158 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2024-01-09 14:30:36.199 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-09 14:30:36.220 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Started PersonApplication in 6.455 seconds (JVM running for 10.816)
+2024-01-09 14:31:00.021 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 14:31:00
+2024-01-09 14:31:00.055 - INFO []   [   scheduling-1] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2024-01-09 14:31:00.682 - INFO []   [   scheduling-1] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2024-01-09 14:31:00.762 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 14:31:00
+2024-01-09 14:32:00.025 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 14:32:00
+2024-01-09 14:32:00.028 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 14:32:00
+2024-01-09 14:33:00.022 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 14:33:00
+2024-01-09 14:33:00.028 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 14:33:00
+2024-01-09 14:34:00.020 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 14:34:00
+2024-01-09 14:34:00.023 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 14:34:00
+2024-01-09 14:35:00.011 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 14:35:00
+2024-01-09 14:35:00.014 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 14:35:00
+2024-01-09 14:36:00.016 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 14:36:00
+2024-01-09 14:36:00.019 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 14:36:00
+2024-01-09 14:36:30.505 - INFO []   [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : A cookie header was received [1701223120,1702348105,1702386012; Hm_lvt_0f31e3f991e5ab56193cdec1512552e0=1701223100,1701307394,1701418407,1702387739; Hm_lvt_abe5ea9dd5df65f0d92b49abcf5665b3=1702538308,1704247078,1704434346,1704708451; JSESSIONID=D61B3072CB6183146D708FE394CDBA28] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-01-09 14:36:30.516 - INFO []   [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09 14:36:30.516 - INFO []   [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2024-01-09 14:36:30.528 - INFO []   [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Completed initialization in 12 ms
+2024-01-09 14:36:33.802 - INFO []   [nio-8080-exec-7] c.a.c.AppActionController      : 登录account:18823768418;password:1;area:0
+2024-01-09 14:36:38.708 - INFO []   [nio-8080-exec-3] c.a.c.AppController            : 微信授权code=null;amount=1
+2024-01-09 14:36:39.672 - INFO []   [nio-8080-exec-2] c.a.s.i.PayServiceImpl         : 提现入参：{amount=1, desc=账户提现, openid=o7KFbs-JFnIDBapvFQ0x-e7XvgVU, partner_trade_no=14cecbf0cf2740819b75f32c23863cd3, spbill_create_ip=0:0:0:0:0:0:0:1}
+2024-01-09 14:36:40.151 - INFO []   [nio-8080-exec-2] c.a.w.s.WXPayReport            : report worker num: 6
+2024-01-09 14:36:40.155 - INFO []   [nio-8080-exec-2] c.a.w.s.WXPayReport            : report v1,WXPaySDK/3.0.9,g2g0O9YPc3QhilTBf6yjy8I43wis5HCN,1704782200,414,api.mch.weixin.qq.com,false,6000,8000,0,0,0,5CDB65A3D53A1DBFACC46D121A49938FAA17D73C01EC3CC6118ED07F9E743421
+2024-01-09 14:36:40.156 - INFO []   [pool-2-thread-1] c.a.w.s.WXPayReport$2          : get first report msg: v1,WXPaySDK/3.0.9,g2g0O9YPc3QhilTBf6yjy8I43wis5HCN,1704782200,414,api.mch.weixin.qq.com,false,6000,8000,0,0,0,5CDB65A3D53A1DBFACC46D121A49938FAA17D73C01EC3CC6118ED07F9E743421
+2024-01-09 14:36:40.156 - INFO []   [pool-2-thread-1] c.a.w.s.WXPayReport$2          : try get remain report msg
+2024-01-09 14:37:00.074 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 14:37:00
+2024-01-09 14:37:00.126 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 14:37:00
+2024-01-09 14:38:00.016 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 14:38:00
+2024-01-09 14:38:00.018 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 14:38:00
+2024-01-09 14:39:00.009 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 14:39:00
+2024-01-09 14:39:00.013 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 14:39:00
+2024-01-09 14:39:00.477 - INFO []   [nio-8080-exec-3] c.a.s.i.PayServiceImpl         : 提现入参：{amount=1, desc=账户提现, openid=o7KFbs-JFnIDBapvFQ0x-e7XvgVU, partner_trade_no=4bcfa04673a6422f9bec7fadd2cd7a3a, spbill_create_ip=0:0:0:0:0:0:0:1}
+2024-01-09 14:39:00.592 - INFO []   [nio-8080-exec-3] c.a.w.s.WXPayReport            : report v1,WXPaySDK/3.0.9,spApbizYlmaZondbsW501l1ln8FD853o,1704782340,102,api.mch.weixin.qq.com,false,6000,8000,0,0,0,4624435564E85606520E48A44589D5F6B9CB8CD85D6435F6CC8174A291ABBE43
+2024-01-09 14:39:04.346 - INFO []   [pool-3-thread-1] c.a.w.s.WXPayReport$2          : get first report msg: v1,WXPaySDK/3.0.9,spApbizYlmaZondbsW501l1ln8FD853o,1704782340,102,api.mch.weixin.qq.com,false,6000,8000,0,0,0,4624435564E85606520E48A44589D5F6B9CB8CD85D6435F6CC8174A291ABBE43
+2024-01-09 14:39:05.360 - INFO []   [pool-3-thread-1] c.a.w.s.WXPayReport$2          : try get remain report msg
+2024-01-09 14:40:05.993 - WARN []   [l-1 housekeeper] c.z.h.p.HikariPool$HouseKeeper : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m1s637ms223µs800ns).
+2024-01-09 14:40:05.994 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 14:40:05
+2024-01-09 14:40:16.489 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 14:40:16
+2024-01-09 14:40:31.659 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 13340 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 14:40:31.730 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 14:40:31.955 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : The Class-Path manifest attribute in D:\repository\xalan\xalan\2.7.0\xalan-2.7.0.jar referenced one or more files that do not exist: file:/D:/repository/xalan/xalan/2.7.0/xercesImpl.jar,file:/D:/repository/xalan/xalan/2.7.0/xml-apis.jar,file:/D:/repository/xalan/xalan/2.7.0/serializer.jar
+2024-01-09 14:40:31.957 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09 14:40:31.957 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09 14:40:39.378 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 14:40:39.399 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 14:40:39.400 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 14:40:39.401 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 14:40:39.570 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 14:40:39.571 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7613 ms
+2024-01-09 14:40:39.641 - WARN []   [  restartedMain] o.a.j.l.DirectJDKLog           : Unable to delete [D:\Temp\D4AB87C78CC9982CB31CF71DEA3322368589E1FD\servlet-sessions\SESSIONS.ser] after reading the persisted sessions. The continued presence of this file may cause future attempts to persist sessions to fail.
+2024-01-09 14:40:40.842 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 14:40:41.224 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'taskScheduler'
+2024-01-09 14:40:41.325 - INFO []   [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-01-09 14:40:41.375 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2024-01-09 14:40:41.441 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-09 14:40:41.472 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Started PersonApplication in 12.413 seconds (JVM running for 19.109)
+2024-01-09 14:41:00.007 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 14:41:00
+2024-01-09 14:41:00.040 - INFO []   [   scheduling-1] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2024-01-09 14:41:00.682 - INFO []   [   scheduling-1] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2024-01-09 14:41:00.816 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 14:41:00
+2024-01-09 14:42:00.015 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 14:42:00
+2024-01-09 14:42:00.018 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 14:42:00
+2024-01-09 14:43:00.011 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 14:43:00
+2024-01-09 14:43:00.017 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 14:43:00
+2024-01-09 14:43:15.364 - INFO []   [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : A cookie header was received [1701223120,1702348105,1702386012; Hm_lvt_0f31e3f991e5ab56193cdec1512552e0=1701223100,1701307394,1701418407,1702387739; Hm_lvt_abe5ea9dd5df65f0d92b49abcf5665b3=1702538308,1704247078,1704434346,1704708451; JSESSIONID=00AAA16531F51104E23B05B81B7E028D] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-01-09 14:43:15.376 - INFO []   [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09 14:43:15.376 - INFO []   [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2024-01-09 14:43:15.389 - INFO []   [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Completed initialization in 12 ms
+2024-01-09 14:43:29.672 - INFO []   [nio-8080-exec-4] c.a.c.AppActionController      : 登录account:18823768418;password:1;area:0
+2024-01-09 14:43:33.980 - INFO []   [nio-8080-exec-5] c.a.c.AppController            : 微信授权code=null;amount=1
+2024-01-09 14:43:35.026 - INFO []   [nio-8080-exec-3] c.a.s.i.PayServiceImpl         : 提现入参：{amount=1, desc=账户提现, openid=o7KFbs-JFnIDBapvFQ0x-e7XvgVU, partner_trade_no=75fe74ddd2cc4d40a4a4108ced1f413f, spbill_create_ip=0:0:0:0:0:0:0:1}
+2024-01-09 14:47:34.915 - WARN []   [l-1 housekeeper] c.z.h.p.HikariPool$HouseKeeper : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m4s51ms190µs700ns).
+2024-01-09 14:47:34.918 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 14:47:34
+2024-01-09 14:47:34.925 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 14:47:34
+2024-01-09 14:50:27.009 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 14060 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 14:50:27.036 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 14:50:27.126 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : The Class-Path manifest attribute in D:\repository\xalan\xalan\2.7.0\xalan-2.7.0.jar referenced one or more files that do not exist: file:/D:/repository/xalan/xalan/2.7.0/xercesImpl.jar,file:/D:/repository/xalan/xalan/2.7.0/xml-apis.jar,file:/D:/repository/xalan/xalan/2.7.0/serializer.jar
+2024-01-09 14:50:27.127 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09 14:50:27.127 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09 14:50:30.728 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 14:50:30.743 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 14:50:30.744 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 14:50:30.744 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 14:50:30.895 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 14:50:30.896 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3768 ms
+2024-01-09 14:50:30.986 - WARN []   [  restartedMain] o.a.j.l.DirectJDKLog           : Unable to delete [D:\Temp\D4AB87C78CC9982CB31CF71DEA3322368589E1FD\servlet-sessions\SESSIONS.ser] after reading the persisted sessions. The continued presence of this file may cause future attempts to persist sessions to fail.
+2024-01-09 14:50:32.011 - WARN []   [  restartedMain] c.s.AbstractApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'appController': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'wxpay.mch_appid' in value "${wxpay.mch_appid}"
+2024-01-09 14:50:32.017 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Stopping service [Tomcat]
+2024-01-09 14:50:32.042 - INFO []   [  restartedMain] valuationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-01-09 14:51:49.245 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 6516 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 14:51:49.260 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 14:51:49.343 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : The Class-Path manifest attribute in D:\repository\xalan\xalan\2.7.0\xalan-2.7.0.jar referenced one or more files that do not exist: file:/D:/repository/xalan/xalan/2.7.0/xercesImpl.jar,file:/D:/repository/xalan/xalan/2.7.0/xml-apis.jar,file:/D:/repository/xalan/xalan/2.7.0/serializer.jar
+2024-01-09 14:51:49.344 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09 14:51:49.344 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09 14:51:52.988 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 14:51:53.005 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 14:51:53.006 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 14:51:53.006 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 14:51:53.163 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 14:51:53.163 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3819 ms
+2024-01-09 14:51:53.256 - WARN []   [  restartedMain] o.a.j.l.DirectJDKLog           : Unable to delete [D:\Temp\D4AB87C78CC9982CB31CF71DEA3322368589E1FD\servlet-sessions\SESSIONS.ser] after reading the persisted sessions. The continued presence of this file may cause future attempts to persist sessions to fail.
+2024-01-09 14:51:54.564 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 14:51:54.996 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'taskScheduler'
+2024-01-09 14:51:55.060 - INFO []   [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-01-09 14:51:55.079 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2024-01-09 14:51:55.118 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-09 14:51:55.139 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Started PersonApplication in 6.624 seconds (JVM running for 10.927)
+2024-01-09 14:52:00.011 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 14:52:00
+2024-01-09 14:52:00.056 - INFO []   [   scheduling-1] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2024-01-09 14:52:02.459 - INFO []   [   scheduling-1] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2024-01-09 14:52:02.541 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 14:52:02
+2024-01-09 14:52:10.855 - INFO []   [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : A cookie header was received [1701223120,1702348105,1702386012; Hm_lvt_0f31e3f991e5ab56193cdec1512552e0=1701223100,1701307394,1701418407,1702387739; Hm_lvt_abe5ea9dd5df65f0d92b49abcf5665b3=1702538308,1704247078,1704434346,1704708451; JSESSIONID=AFC5A5E7632C2BC6AC89CAAA75D2211F] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-01-09 14:52:10.866 - INFO []   [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09 14:52:10.866 - INFO []   [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2024-01-09 14:52:10.877 - INFO []   [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Completed initialization in 11 ms
+2024-01-09 14:52:14.440 - INFO []   [nio-8080-exec-8] c.a.c.AppActionController      : 登录account:18823768418;password:1;area:0
+2024-01-09 14:52:18.474 - INFO []   [nio-8080-exec-8] c.a.c.AppController            : 微信授权code=null;amount=1
+2024-01-09 14:52:19.525 - INFO []   [nio-8080-exec-5] c.a.s.i.PayServiceImpl         : 提现入参：{amount=1, desc=账户提现, openid=o7KFbs-JFnIDBapvFQ0x-e7XvgVU, partner_trade_no=2a32981dd943489098cd006badfe3fd8, spbill_create_ip=0:0:0:0:0:0:0:1}
+2024-01-09 14:52:19.958 - INFO []   [nio-8080-exec-5] c.a.w.s.WXPayReport            : report worker num: 6
+2024-01-09 14:52:19.962 - INFO []   [nio-8080-exec-5] c.a.w.s.WXPayReport            : report v1,WXPaySDK/3.0.9,uHLiJWqAHHrBC4Pc7lmRpIV9ceGiohb9,1704783139,373,api.mch.weixin.qq.com,false,6000,8000,0,0,0,5F812263E9E4B2156E98399F4B7730F825CE84D6555C20CF5C6F1E2057F3B218
+2024-01-09 14:52:19.963 - INFO []   [pool-2-thread-1] c.a.w.s.WXPayReport$2          : get first report msg: v1,WXPaySDK/3.0.9,uHLiJWqAHHrBC4Pc7lmRpIV9ceGiohb9,1704783139,373,api.mch.weixin.qq.com,false,6000,8000,0,0,0,5F812263E9E4B2156E98399F4B7730F825CE84D6555C20CF5C6F1E2057F3B218
+2024-01-09 14:52:19.964 - INFO []   [pool-2-thread-1] c.a.w.s.WXPayReport$2          : try get remain report msg
+2024-01-09 14:53:00.011 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 14:53:00
+2024-01-09 14:53:00.015 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 14:53:00
+2024-01-09 14:53:57.217 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 976 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 14:53:57.232 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 14:53:57.317 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : The Class-Path manifest attribute in D:\repository\xalan\xalan\2.7.0\xalan-2.7.0.jar referenced one or more files that do not exist: file:/D:/repository/xalan/xalan/2.7.0/xercesImpl.jar,file:/D:/repository/xalan/xalan/2.7.0/xml-apis.jar,file:/D:/repository/xalan/xalan/2.7.0/serializer.jar
+2024-01-09 14:53:57.318 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09 14:53:57.318 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09 14:54:00.510 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 14:54:00.525 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 14:54:00.525 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 14:54:00.525 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 14:54:00.655 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 14:54:00.656 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3336 ms
+2024-01-09 14:54:00.722 - WARN []   [  restartedMain] o.a.j.l.DirectJDKLog           : Unable to delete [D:\Temp\D4AB87C78CC9982CB31CF71DEA3322368589E1FD\servlet-sessions\SESSIONS.ser] after reading the persisted sessions. The continued presence of this file may cause future attempts to persist sessions to fail.
+2024-01-09 14:54:01.870 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 14:54:02.273 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'taskScheduler'
+2024-01-09 14:54:02.346 - INFO []   [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-01-09 14:54:02.363 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2024-01-09 14:54:02.402 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-09 14:54:02.424 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Started PersonApplication in 5.857 seconds (JVM running for 12.568)
+2024-01-09 14:54:07.527 - INFO []   [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : A cookie header was received [1701223120,1702348105,1702386012; Hm_lvt_0f31e3f991e5ab56193cdec1512552e0=1701223100,1701307394,1701418407,1702387739; Hm_lvt_abe5ea9dd5df65f0d92b49abcf5665b3=1702538308,1704247078,1704434346,1704708451; JSESSIONID=0875B36A665BD1F0467A365BBDE843CC] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-01-09 14:54:07.541 - INFO []   [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09 14:54:07.541 - INFO []   [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2024-01-09 14:54:07.555 - INFO []   [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Completed initialization in 14 ms
+2024-01-09 14:54:08.916 - INFO []   [nio-8080-exec-6] c.a.c.AppActionController      : 登录account:18823768418;password:1;area:0
+2024-01-09 14:54:08.964 - INFO []   [nio-8080-exec-6] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2024-01-09 14:54:09.591 - INFO []   [nio-8080-exec-6] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2024-01-09 14:54:13.867 - INFO []   [nio-8080-exec-3] c.a.c.AppController            : 微信授权code=null;amount=1
+2024-01-09 14:54:14.822 - INFO []   [nio-8080-exec-3] c.a.s.i.PayServiceImpl         : 提现入参：{amount=1, desc=账户提现, openid=o7KFbs-JFnIDBapvFQ0x-e7XvgVU, partner_trade_no=ae8943d14a624c2799d7e796972687ea, spbill_create_ip=0:0:0:0:0:0:0:1}
+2024-01-09 14:54:15.246 - INFO []   [nio-8080-exec-3] c.a.w.s.WXPayReport            : report worker num: 6
+2024-01-09 14:54:15.250 - INFO []   [nio-8080-exec-3] c.a.w.s.WXPayReport            : report v1,WXPaySDK/3.0.9,Bf96SOrZhYjlkkIJPaGnSZOjK5gIAnVQ,1704783255,364,api.mch.weixin.qq.com,false,6000,8000,0,0,0,642EA75804EAE91AFFCB064D10BAF3C01D2A9BD26F637371D3705A9254F7B5F1
+2024-01-09 14:54:15.251 - INFO []   [pool-3-thread-1] c.a.w.s.WXPayReport$2          : get first report msg: v1,WXPaySDK/3.0.9,Bf96SOrZhYjlkkIJPaGnSZOjK5gIAnVQ,1704783255,364,api.mch.weixin.qq.com,false,6000,8000,0,0,0,642EA75804EAE91AFFCB064D10BAF3C01D2A9BD26F637371D3705A9254F7B5F1
+2024-01-09 14:54:15.251 - INFO []   [pool-3-thread-1] c.a.w.s.WXPayReport$2          : try get remain report msg
+2024-01-09 14:55:16.804 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 13344 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 14:55:16.826 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 14:55:16.928 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : The Class-Path manifest attribute in D:\repository\xalan\xalan\2.7.0\xalan-2.7.0.jar referenced one or more files that do not exist: file:/D:/repository/xalan/xalan/2.7.0/xercesImpl.jar,file:/D:/repository/xalan/xalan/2.7.0/xml-apis.jar,file:/D:/repository/xalan/xalan/2.7.0/serializer.jar
+2024-01-09 14:55:16.928 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09 14:55:16.929 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09 14:55:20.719 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 14:55:20.739 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 14:55:20.740 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 14:55:20.740 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 14:55:20.885 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 14:55:20.885 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3956 ms
+2024-01-09 14:55:22.216 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 14:55:22.613 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'taskScheduler'
+2024-01-09 14:55:22.683 - INFO []   [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-01-09 14:55:22.700 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2024-01-09 14:55:22.738 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-09 14:55:22.758 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Started PersonApplication in 6.9 seconds (JVM running for 12.321)
+2024-01-09 14:55:22.941 - INFO []   [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : A cookie header was received [1701223120,1702348105,1702386012; Hm_lvt_0f31e3f991e5ab56193cdec1512552e0=1701223100,1701307394,1701418407,1702387739; Hm_lvt_abe5ea9dd5df65f0d92b49abcf5665b3=1702538308,1704247078,1704434346,1704708451; JSESSIONID=E71AF331596CBA6D2B29A38D41765CA9] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-01-09 14:55:22.955 - INFO []   [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09 14:55:22.956 - INFO []   [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2024-01-09 14:55:22.975 - INFO []   [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Completed initialization in 19 ms
+2024-01-09 14:55:24.401 - INFO []   [nio-8080-exec-9] c.a.c.AppActionController      : 登录account:18823768418;password:1;area:0
+2024-01-09 14:55:24.490 - INFO []   [nio-8080-exec-9] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2024-01-09 14:55:25.196 - INFO []   [nio-8080-exec-9] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2024-01-09 14:55:28.945 - INFO []   [nio-8080-exec-5] c.a.c.AppController            : 微信授权code=null;amount=1
+2024-01-09 14:55:29.951 - INFO []   [nio-8080-exec-8] c.a.s.i.PayServiceImpl         : 提现入参：{amount=1, desc=账户提现, openid=o7KFbs-JFnIDBapvFQ0x-e7XvgVU, partner_trade_no=6d2ebf19f7684862a541cbbf245aa80b, spbill_create_ip=0:0:0:0:0:0:0:1}
+2024-01-09 14:55:53.488 - INFO []   [nio-8080-exec-8] c.a.w.s.WXPayReport            : report worker num: 6
+2024-01-09 14:55:53.493 - INFO []   [nio-8080-exec-8] c.a.w.s.WXPayReport            : report v1,WXPaySDK/3.0.9,rg6stanT4lmVqnNJgYLSMDeLkXMu2PNU,1704783353,424,api.mch.weixin.qq.com,false,6000,8000,0,0,0,06C7F33B05CFBB59F73297FD5A0C677F4B0E1D91259D163C94A6DA383B6A8C4A
+2024-01-09 14:55:53.493 - INFO []   [pool-3-thread-1] c.a.w.s.WXPayReport$2          : get first report msg: v1,WXPaySDK/3.0.9,rg6stanT4lmVqnNJgYLSMDeLkXMu2PNU,1704783353,424,api.mch.weixin.qq.com,false,6000,8000,0,0,0,06C7F33B05CFBB59F73297FD5A0C677F4B0E1D91259D163C94A6DA383B6A8C4A
+2024-01-09 14:55:53.494 - INFO []   [pool-3-thread-1] c.a.w.s.WXPayReport$2          : try get remain report msg
+2024-01-09 14:56:00.020 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 14:56:00
+2024-01-09 14:56:00.023 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 14:56:00
+2024-01-09 14:57:00.017 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 14:57:00
+2024-01-09 14:57:00.033 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 14:57:00
+2024-01-09 14:57:18.122 - INFO []   [      Thread-23] c.ExecutorConfigurationSupport : Shutting down ExecutorService 'taskScheduler'
+2024-01-09 14:57:18.124 - INFO []   [      Thread-23] c.ExecutorConfigurationSupport : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-01-09 14:57:18.126 - INFO []   [      Thread-23] c.z.h.HikariDataSource         : HikariPool-1 - Shutdown initiated...
+2024-01-09 14:57:18.137 - INFO []   [      Thread-23] c.z.h.HikariDataSource         : HikariPool-1 - Shutdown completed.
+2024-01-09 14:57:18.482 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 13344 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 14:57:18.483 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 14:57:22.383 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 14:57:22.384 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 14:57:22.385 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 14:57:22.386 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 14:57:22.435 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 14:57:22.436 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3943 ms
+2024-01-09 14:57:23.936 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 14:57:24.385 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'taskScheduler'
+2024-01-09 14:57:24.465 - INFO []   [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-01-09 14:57:24.485 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2024-01-09 14:57:24.491 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-09 14:57:24.506 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Started PersonApplication in 6.141 seconds (JVM running for 134.054)
+2024-01-09 14:57:24.512 - INFO []   [  restartedMain] EvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-01-09 14:58:00.016 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 14:58:00
+2024-01-09 14:58:00.018 - INFO []   [   scheduling-1] c.z.h.HikariDataSource         : HikariPool-2 - Starting...
+2024-01-09 14:58:00.092 - INFO []   [   scheduling-1] c.z.h.HikariDataSource         : HikariPool-2 - Start completed.
+2024-01-09 14:58:00.109 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 14:58:00
+2024-01-09 14:58:22.159 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 3440 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 14:58:22.175 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 14:58:22.262 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : The Class-Path manifest attribute in D:\repository\xalan\xalan\2.7.0\xalan-2.7.0.jar referenced one or more files that do not exist: file:/D:/repository/xalan/xalan/2.7.0/xercesImpl.jar,file:/D:/repository/xalan/xalan/2.7.0/xml-apis.jar,file:/D:/repository/xalan/xalan/2.7.0/serializer.jar
+2024-01-09 14:58:22.263 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09 14:58:22.263 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09 14:58:26.214 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 14:58:26.232 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 14:58:26.232 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 14:58:26.233 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 14:58:26.370 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 14:58:26.371 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4106 ms
+2024-01-09 14:58:27.759 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 14:58:28.107 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'taskScheduler'
+2024-01-09 14:58:28.169 - INFO []   [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-01-09 14:58:28.191 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2024-01-09 14:58:28.235 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-09 14:58:28.257 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Started PersonApplication in 6.918 seconds (JVM running for 11.324)
+2024-01-09 14:58:34.372 - INFO []   [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : A cookie header was received [1701223120,1702348105,1702386012; Hm_lvt_0f31e3f991e5ab56193cdec1512552e0=1701223100,1701307394,1701418407,1702387739; Hm_lvt_abe5ea9dd5df65f0d92b49abcf5665b3=1702538308,1704247078,1704434346,1704708451; JSESSIONID=E71AF331596CBA6D2B29A38D41765CA9] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-01-09 14:58:34.385 - INFO []   [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09 14:58:34.385 - INFO []   [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2024-01-09 14:58:34.397 - INFO []   [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Completed initialization in 12 ms
+2024-01-09 14:58:35.813 - INFO []   [nio-8080-exec-6] c.a.c.AppActionController      : 登录account:18823768418;password:1;area:0
+2024-01-09 14:58:35.861 - INFO []   [nio-8080-exec-6] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2024-01-09 14:58:36.472 - INFO []   [nio-8080-exec-6] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2024-01-09 14:58:40.200 - INFO []   [nio-8080-exec-3] c.a.c.AppController            : 微信授权code=null;amount=1
+2024-01-09 14:58:41.704 - INFO []   [io-8080-exec-10] c.a.s.i.PayServiceImpl         : 提现入参：{amount=1, check_name=NO_CHECK, desc=账户提现, openid=o7KFbs-JFnIDBapvFQ0x-e7XvgVU, partner_trade_no=09c03512afbd4bebaf885423e012fc43, spbill_create_ip=0:0:0:0:0:0:0:1}
+2024-01-09 14:58:47.603 - INFO []   [io-8080-exec-10] c.a.w.s.WXPayReport            : report worker num: 6
+2024-01-09 14:58:47.608 - INFO []   [io-8080-exec-10] c.a.w.s.WXPayReport            : report v1,WXPaySDK/3.0.9,dRXhpSysbykUUQcli9qollbfGkW4eOrw,1704783527,576,api.mch.weixin.qq.com,false,6000,8000,0,0,0,1DDF17EC79A3E3079C1FAB43A4EDB385C352E20559CBC72832162FDC88479667
+2024-01-09 14:58:47.608 - INFO []   [pool-2-thread-1] c.a.w.s.WXPayReport$2          : get first report msg: v1,WXPaySDK/3.0.9,dRXhpSysbykUUQcli9qollbfGkW4eOrw,1704783527,576,api.mch.weixin.qq.com,false,6000,8000,0,0,0,1DDF17EC79A3E3079C1FAB43A4EDB385C352E20559CBC72832162FDC88479667
+2024-01-09 14:58:47.608 - INFO []   [pool-2-thread-1] c.a.w.s.WXPayReport$2          : try get remain report msg
+2024-01-09 14:59:00.020 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 14:59:00
+2024-01-09 14:59:00.023 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 14:59:00
+2024-01-09 14:59:14.541 - INFO []   [nio-8080-exec-8] c.a.s.i.PayServiceImpl         : 提现入参：{amount=1, check_name=NO_CHECK, desc=账户提现, openid=o7KFbs-JFnIDBapvFQ0x-e7XvgVU, partner_trade_no=3ec4ce3ff4944b26bb02f4016dd976a4, spbill_create_ip=0:0:0:0:0:0:0:1}
+2024-01-09 14:59:14.683 - INFO []   [nio-8080-exec-8] c.a.w.s.WXPayReport            : report v1,WXPaySDK/3.0.9,HiFNxPP0SV2dsuHz29mr7rntsJLZIZmk,1704783554,128,api.mch.weixin.qq.com,false,6000,8000,0,0,0,65DBE91834A23A3202B5117CCD4A26643D3681E3297EC602149EF2EF0E9795C6
+2024-01-09 14:59:14.684 - INFO []   [pool-3-thread-1] c.a.w.s.WXPayReport$2          : get first report msg: v1,WXPaySDK/3.0.9,HiFNxPP0SV2dsuHz29mr7rntsJLZIZmk,1704783554,128,api.mch.weixin.qq.com,false,6000,8000,0,0,0,65DBE91834A23A3202B5117CCD4A26643D3681E3297EC602149EF2EF0E9795C6
+2024-01-09 14:59:14.684 - INFO []   [pool-3-thread-1] c.a.w.s.WXPayReport$2          : try get remain report msg
+2024-01-09 15:00:00.014 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:00:00
+2024-01-09 15:00:00.025 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:00:00
+2024-01-09 15:01:00.020 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:01:00
+2024-01-09 15:01:00.022 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:01:00
+2024-01-09 15:02:00.019 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:02:00
+2024-01-09 15:02:00.023 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:02:00
+2024-01-09 15:03:00.021 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:03:00
+2024-01-09 15:03:00.024 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:03:00
+2024-01-09 15:03:49.073 - INFO []   [nio-8080-exec-9] c.a.c.AppController            : 微信授权code=null;amount=1
+2024-01-09 15:03:50.223 - INFO []   [nio-8080-exec-7] c.a.s.i.PayServiceImpl         : 支付下单入参：{body=账户充值, device_info=WEB, openid=o7KFbs-JFnIDBapvFQ0x-e7XvgVU, out_trade_no=3587f3acddda4a0cb6989833b819dcff, spbill_create_ip=0:0:0:0:0:0:0:1, total_fee=1, trade_type=MWEB}
+2024-01-09 15:03:50.407 - INFO []   [nio-8080-exec-7] c.a.w.s.WXPayReport            : report v1,WXPaySDK/3.0.9,aCBPBrJmt5c4UpW9JkkFEqnoGXgB3c52,1704783830,172,api.mch.weixin.qq.com,false,6000,8000,0,0,0,56CC79998FD5389FEBC7AB3C83B802BEDD8A937B3359FA131E57BA5EEC29A01C
+2024-01-09 15:03:50.407 - INFO []   [pool-4-thread-1] c.a.w.s.WXPayReport$2          : get first report msg: v1,WXPaySDK/3.0.9,aCBPBrJmt5c4UpW9JkkFEqnoGXgB3c52,1704783830,172,api.mch.weixin.qq.com,false,6000,8000,0,0,0,56CC79998FD5389FEBC7AB3C83B802BEDD8A937B3359FA131E57BA5EEC29A01C
+2024-01-09 15:03:50.407 - INFO []   [pool-4-thread-1] c.a.w.s.WXPayReport$2          : try get remain report msg
+2024-01-09 15:03:50.411 - INFO []   [nio-8080-exec-7] c.a.s.i.PayServiceImpl         : 支付下单出参：{return_msg=签名错误, return_code=FAIL}
+2024-01-09 15:04:00.016 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:04:00
+2024-01-09 15:04:00.019 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:04:00
+2024-01-09 15:05:00.010 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:05:00
+2024-01-09 15:05:00.012 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:05:00
+2024-01-09 15:06:00.021 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:06:00
+2024-01-09 15:06:00.024 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:06:00
+2024-01-09 15:07:00.010 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:07:00
+2024-01-09 15:07:00.013 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:07:00
+2024-01-09 15:07:41.614 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 2924 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 15:07:41.629 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 15:07:41.708 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : The Class-Path manifest attribute in D:\repository\xalan\xalan\2.7.0\xalan-2.7.0.jar referenced one or more files that do not exist: file:/D:/repository/xalan/xalan/2.7.0/xercesImpl.jar,file:/D:/repository/xalan/xalan/2.7.0/xml-apis.jar,file:/D:/repository/xalan/xalan/2.7.0/serializer.jar
+2024-01-09 15:07:41.708 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09 15:07:41.708 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09 15:07:45.189 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 15:07:45.205 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 15:07:45.205 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 15:07:45.206 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 15:07:45.337 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 15:07:45.337 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3629 ms
+2024-01-09 15:07:46.450 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 15:07:46.796 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'taskScheduler'
+2024-01-09 15:07:46.858 - INFO []   [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-01-09 15:07:46.875 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2024-01-09 15:07:46.912 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-09 15:07:46.932 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Started PersonApplication in 6.802 seconds (JVM running for 11.402)
+2024-01-09 15:08:00.008 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:08:00
+2024-01-09 15:08:00.042 - INFO []   [   scheduling-1] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2024-01-09 15:08:00.617 - INFO []   [   scheduling-1] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2024-01-09 15:08:00.706 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:08:00
+2024-01-09 15:08:12.452 - INFO []   [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : A cookie header was received [1701223120,1702348105,1702386012; Hm_lvt_0f31e3f991e5ab56193cdec1512552e0=1701223100,1701307394,1701418407,1702387739; Hm_lvt_abe5ea9dd5df65f0d92b49abcf5665b3=1702538308,1704247078,1704434346,1704708451; JSESSIONID=C311C9837876956C0A132112CDF6535F] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-01-09 15:08:12.468 - INFO []   [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09 15:08:12.469 - INFO []   [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2024-01-09 15:08:12.483 - INFO []   [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Completed initialization in 14 ms
+2024-01-09 15:08:14.059 - INFO []   [nio-8080-exec-7] c.a.c.AppActionController      : 登录account:18823768418;password:1;area:0
+2024-01-09 15:08:17.351 - INFO []   [nio-8080-exec-4] c.a.c.AppController            : 微信授权code=null;amount=1
+2024-01-09 15:08:18.394 - INFO []   [nio-8080-exec-2] c.a.s.i.PayServiceImpl         : 提现入参：{amount=1, check_name=NO_CHECK, desc=账户提现, openid=o7KFbs-JFnIDBapvFQ0x-e7XvgVU, partner_trade_no=a1fc7e44b9bd4560817f1fcd51cd2f39, spbill_create_ip=0:0:0:0:0:0:0:1}
+2024-01-09 15:08:18.880 - INFO []   [nio-8080-exec-2] c.a.w.s.WXPayReport            : report worker num: 6
+2024-01-09 15:08:18.885 - INFO []   [nio-8080-exec-2] c.a.w.s.WXPayReport            : report v1,WXPaySDK/3.0.9,8UscA2f0mjbO7293J2CBLtcYTZv4PoCk,1704784098,404,api.mch.weixin.qq.com,false,6000,8000,0,0,0,A5B63304971576EF3DE3774296FCA653C95B4A5BCAFEBBB354C4699E16151AE5
+2024-01-09 15:08:18.885 - INFO []   [pool-3-thread-1] c.a.w.s.WXPayReport$2          : get first report msg: v1,WXPaySDK/3.0.9,8UscA2f0mjbO7293J2CBLtcYTZv4PoCk,1704784098,404,api.mch.weixin.qq.com,false,6000,8000,0,0,0,A5B63304971576EF3DE3774296FCA653C95B4A5BCAFEBBB354C4699E16151AE5
+2024-01-09 15:08:18.886 - INFO []   [pool-3-thread-1] c.a.w.s.WXPayReport$2          : try get remain report msg
+2024-01-09 15:08:18.891 - INFO []   [nio-8080-exec-2] c.a.s.i.PayServiceImpl         : 提现出参：{mchid=1230000109, mch_appid=wx67c9da8404589ae3, err_code=PARAM_ERROR, return_msg=参数错误:商户号有误,无法查询商户信息, result_code=FAIL, err_code_des=参数错误:商户号有误,无法查询商户信息, return_code=SUCCESS}
+2024-01-09 15:09:00.022 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:09:00
+2024-01-09 15:09:00.025 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:09:00
+2024-01-09 15:10:10.462 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 14012 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 15:10:10.476 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 15:10:10.555 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : The Class-Path manifest attribute in D:\repository\xalan\xalan\2.7.0\xalan-2.7.0.jar referenced one or more files that do not exist: file:/D:/repository/xalan/xalan/2.7.0/xercesImpl.jar,file:/D:/repository/xalan/xalan/2.7.0/xml-apis.jar,file:/D:/repository/xalan/xalan/2.7.0/serializer.jar
+2024-01-09 15:10:10.555 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09 15:10:10.556 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09 15:10:13.924 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 15:10:13.943 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 15:10:13.944 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 15:10:13.944 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 15:10:14.073 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 15:10:14.073 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3517 ms
+2024-01-09 15:10:15.975 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 15:10:16.327 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'taskScheduler'
+2024-01-09 15:10:16.392 - INFO []   [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-01-09 15:10:16.413 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2024-01-09 15:10:16.450 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-09 15:10:16.470 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Started PersonApplication in 6.623 seconds (JVM running for 11.595)
+2024-01-09 15:11:00.022 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:11:00
+2024-01-09 15:11:00.055 - INFO []   [   scheduling-1] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2024-01-09 15:11:00.614 - INFO []   [   scheduling-1] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2024-01-09 15:11:00.692 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:11:00
+2024-01-09 15:11:27.509 - INFO []   [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : A cookie header was received [1701223120,1702348105,1702386012; Hm_lvt_0f31e3f991e5ab56193cdec1512552e0=1701223100,1701307394,1701418407,1702387739; Hm_lvt_abe5ea9dd5df65f0d92b49abcf5665b3=1702538308,1704247078,1704434346,1704708451; JSESSIONID=C311C9837876956C0A132112CDF6535F] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-01-09 15:11:27.527 - INFO []   [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09 15:11:27.527 - INFO []   [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2024-01-09 15:11:27.542 - INFO []   [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Completed initialization in 15 ms
+2024-01-09 15:11:29.222 - INFO []   [nio-8080-exec-9] c.a.c.AppActionController      : 登录account:18823768418;password:1;area:0
+2024-01-09 15:11:39.701 - INFO []   [nio-8080-exec-3] c.a.c.AppController            : 微信授权code=null;amount=1
+2024-01-09 15:11:40.808 - INFO []   [nio-8080-exec-1] c.a.s.i.PayServiceImpl         : 提现入参：{amount=1, check_name=NO_CHECK, desc=账户提现, openid=o7KFbs-JFnIDBapvFQ0x-e7XvgVU, partner_trade_no=9e7c319be0b543cb862466d78121ef5d, spbill_create_ip=0:0:0:0:0:0:0:1}
+2024-01-09 15:11:41.248 - INFO []   [nio-8080-exec-1] c.a.w.s.WXPayReport            : report worker num: 6
+2024-01-09 15:11:41.251 - INFO []   [nio-8080-exec-1] c.a.w.s.WXPayReport            : report v1,WXPaySDK/3.0.9,MvT8gKKkjw8RU2veFLMV6415UcfsDKvm,1704784301,358,api.mch.weixin.qq.com,false,6000,8000,0,0,0,35EBE60E7A9DE7EC6D8DFA3CB8EACB2B7DCD016988EB4993E91C3656A18093AA
+2024-01-09 15:11:41.252 - INFO []   [pool-3-thread-1] c.a.w.s.WXPayReport$2          : get first report msg: v1,WXPaySDK/3.0.9,MvT8gKKkjw8RU2veFLMV6415UcfsDKvm,1704784301,358,api.mch.weixin.qq.com,false,6000,8000,0,0,0,35EBE60E7A9DE7EC6D8DFA3CB8EACB2B7DCD016988EB4993E91C3656A18093AA
+2024-01-09 15:11:41.252 - INFO []   [pool-3-thread-1] c.a.w.s.WXPayReport$2          : try get remain report msg
+2024-01-09 15:11:41.259 - INFO []   [nio-8080-exec-1] c.a.s.i.PayServiceImpl         : 提现出参：{mchid=1230000109, mch_appid=wx67c9da8404589ae3, err_code=PARAM_ERROR, return_msg=参数错误:商户号有误,无法查询商户信息, result_code=FAIL, err_code_des=参数错误:商户号有误,无法查询商户信息, return_code=SUCCESS}
+2024-01-09 15:12:00.056 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:12:00
+2024-01-09 15:12:00.061 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:12:00
+2024-01-09 15:13:00.009 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:13:00
+2024-01-09 15:13:00.011 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:13:00
+2024-01-09 15:13:43.868 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 228 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 15:13:43.896 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 15:13:44.222 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : The Class-Path manifest attribute in D:\repository\xalan\xalan\2.7.0\xalan-2.7.0.jar referenced one or more files that do not exist: file:/D:/repository/xalan/xalan/2.7.0/xercesImpl.jar,file:/D:/repository/xalan/xalan/2.7.0/xml-apis.jar,file:/D:/repository/xalan/xalan/2.7.0/serializer.jar
+2024-01-09 15:13:44.223 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09 15:13:44.223 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09 15:13:48.104 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 15:13:48.123 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 15:13:48.125 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 15:13:48.127 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 15:13:48.280 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 15:13:48.280 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4056 ms
+2024-01-09 15:13:49.597 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 15:13:50.033 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'taskScheduler'
+2024-01-09 15:13:50.100 - INFO []   [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-01-09 15:13:50.119 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2024-01-09 15:13:50.156 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-09 15:13:50.177 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Started PersonApplication in 7.662 seconds (JVM running for 12.348)
+2024-01-09 15:13:52.598 - INFO []   [nio-8080-exec-1] o.a.j.l.DirectJDKLog           : A cookie header was received [1701223120,1702348105,1702386012; Hm_lvt_0f31e3f991e5ab56193cdec1512552e0=1701223100,1701307394,1701418407,1702387739; Hm_lvt_abe5ea9dd5df65f0d92b49abcf5665b3=1702538308,1704247078,1704434346,1704708451; JSESSIONID=E5A13CB08179B775E3F86035EAC826AB] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-01-09 15:13:52.609 - INFO []   [nio-8080-exec-1] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09 15:13:52.609 - INFO []   [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2024-01-09 15:13:52.620 - INFO []   [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 10 ms
+2024-01-09 15:13:55.064 - INFO []   [nio-8080-exec-7] c.a.c.AppActionController      : 登录account:18823768418;password:1;area:0
+2024-01-09 15:13:55.114 - INFO []   [nio-8080-exec-7] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2024-01-09 15:13:55.700 - INFO []   [nio-8080-exec-7] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2024-01-09 15:13:59.179 - INFO []   [nio-8080-exec-6] c.a.c.AppController            : 微信授权code=null;amount=1
+2024-01-09 15:14:00.007 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:14:00
+2024-01-09 15:14:00.014 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:14:00
+2024-01-09 15:14:17.775 - INFO []   [nio-8080-exec-5] c.a.c.AppActionController      : 登录account:10000;password:1;area:0
+2024-01-09 15:14:27.641 - INFO []   [nio-8080-exec-2] c.a.c.AppActionController      : 登录account:18823768418;password:1;area:0
+2024-01-09 15:14:30.803 - INFO []   [io-8080-exec-10] c.a.c.AppController            : 微信授权code=null;amount=1
+2024-01-09 15:14:31.817 - INFO []   [nio-8080-exec-1] c.a.s.i.PayServiceImpl         : 提现入参：{amount=1, check_name=NO_CHECK, desc=账户提现, openid=o7KFbs-JFnIDBapvFQ0x-e7XvgVU, partner_trade_no=25def8062c964a249cd1167c79dbf2b9, spbill_create_ip=0:0:0:0:0:0:0:1}
+2024-01-09 15:14:32.477 - INFO []   [nio-8080-exec-1] c.a.w.s.WXPayReport            : report worker num: 6
+2024-01-09 15:14:32.482 - INFO []   [nio-8080-exec-1] c.a.w.s.WXPayReport            : report v1,WXPaySDK/3.0.9,p7kgs9Yocj7jGPWsl9dm1Aa8VtUQr1kj,1704784472,587,api.mch.weixin.qq.com,false,6000,8000,0,0,0,CEFB11912EF007C6E8AF5501EC98402032C5DF3477A4E6B1B24F17138A309223
+2024-01-09 15:14:32.482 - INFO []   [pool-3-thread-1] c.a.w.s.WXPayReport$2          : get first report msg: v1,WXPaySDK/3.0.9,p7kgs9Yocj7jGPWsl9dm1Aa8VtUQr1kj,1704784472,587,api.mch.weixin.qq.com,false,6000,8000,0,0,0,CEFB11912EF007C6E8AF5501EC98402032C5DF3477A4E6B1B24F17138A309223
+2024-01-09 15:14:32.482 - INFO []   [pool-3-thread-1] c.a.w.s.WXPayReport$2          : try get remain report msg
+2024-01-09 15:14:32.488 - INFO []   [nio-8080-exec-1] c.a.s.i.PayServiceImpl         : 提现出参：{mchid=1230000109, mch_appid=wx67c9da8404589ae3, err_code=PARAM_ERROR, return_msg=参数错误:商户号有误,无法查询商户信息, result_code=FAIL, err_code_des=参数错误:商户号有误,无法查询商户信息, return_code=SUCCESS}
+2024-01-09 15:14:40.030 - INFO []   [nio-8080-exec-5] c.a.c.AppController            : 微信授权code=null;amount=1
+2024-01-09 15:14:40.889 - INFO []   [nio-8080-exec-3] c.a.s.i.PayServiceImpl         : 支付下单入参：{body=账户充值, device_info=WEB, openid=o7KFbs-JFnIDBapvFQ0x-e7XvgVU, out_trade_no=6c9313e515334d9ba81cddffd90f89db, spbill_create_ip=0:0:0:0:0:0:0:1, total_fee=1, trade_type=MWEB}
+2024-01-09 15:14:41.074 - INFO []   [nio-8080-exec-3] c.a.w.s.WXPayReport            : report v1,WXPaySDK/3.0.9,DSKfE3fOZEU4ZwXxnnWM0rUcOXq9PdhA,1704784481,174,api.mch.weixin.qq.com,false,6000,8000,0,0,0,2F9E33B9A81CC059A3D9D8A12833BB7F10471887685D9F70C06D67172DEFC8BE
+2024-01-09 15:14:41.075 - INFO []   [pool-2-thread-1] c.a.w.s.WXPayReport$2          : get first report msg: v1,WXPaySDK/3.0.9,DSKfE3fOZEU4ZwXxnnWM0rUcOXq9PdhA,1704784481,174,api.mch.weixin.qq.com,false,6000,8000,0,0,0,2F9E33B9A81CC059A3D9D8A12833BB7F10471887685D9F70C06D67172DEFC8BE
+2024-01-09 15:14:41.075 - INFO []   [pool-2-thread-1] c.a.w.s.WXPayReport$2          : try get remain report msg
+2024-01-09 15:15:00.022 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:15:00
+2024-01-09 15:15:00.027 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:15:00
+2024-01-09 15:16:00.014 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:16:00
+2024-01-09 15:16:00.017 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:16:00
+2024-01-09 15:17:05.316 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 14060 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 15:17:05.344 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 15:17:05.448 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : The Class-Path manifest attribute in D:\repository\xalan\xalan\2.7.0\xalan-2.7.0.jar referenced one or more files that do not exist: file:/D:/repository/xalan/xalan/2.7.0/xercesImpl.jar,file:/D:/repository/xalan/xalan/2.7.0/xml-apis.jar,file:/D:/repository/xalan/xalan/2.7.0/serializer.jar
+2024-01-09 15:17:05.449 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09 15:17:05.449 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09 15:17:09.120 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 15:17:09.137 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 15:17:09.137 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 15:17:09.138 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 15:17:09.310 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 15:17:09.311 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3861 ms
+2024-01-09 15:17:10.677 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 15:17:11.108 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'taskScheduler'
+2024-01-09 15:17:11.176 - INFO []   [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-01-09 15:17:11.193 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2024-01-09 15:17:11.235 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-09 15:17:11.264 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Started PersonApplication in 6.686 seconds (JVM running for 11.736)
+2024-01-09 15:17:11.348 - INFO []   [nio-8080-exec-1] o.a.j.l.DirectJDKLog           : A cookie header was received [1701223120,1702348105,1702386012; Hm_lvt_0f31e3f991e5ab56193cdec1512552e0=1701223100,1701307394,1701418407,1702387739; Hm_lvt_abe5ea9dd5df65f0d92b49abcf5665b3=1702538308,1704247078,1704434346,1704708451; JSESSIONID=E5A13CB08179B775E3F86035EAC826AB] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-01-09 15:17:11.359 - INFO []   [nio-8080-exec-1] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09 15:17:11.360 - INFO []   [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2024-01-09 15:17:11.375 - INFO []   [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 14 ms
+2024-01-09 15:17:13.688 - INFO []   [nio-8080-exec-9] c.a.c.AppActionController      : 登录account:18823768418;password:1;area:0
+2024-01-09 15:17:13.755 - INFO []   [nio-8080-exec-9] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2024-01-09 15:17:14.383 - INFO []   [nio-8080-exec-9] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2024-01-09 15:17:17.910 - INFO []   [nio-8080-exec-3] c.a.c.AppController            : 微信授权code=null;amount=1
+2024-01-09 15:17:18.810 - INFO []   [nio-8080-exec-9] c.a.s.i.PayServiceImpl         : 支付下单入参：{body=账户充值, device_info=WEB, openid=o7KFbs-JFnIDBapvFQ0x-e7XvgVU, out_trade_no=7d757eaaaff54ad3963f870d7be0d2ec, spbill_create_ip=0:0:0:0:0:0:0:1, total_fee=1, trade_type=MWEB}
+2024-01-09 15:17:19.297 - INFO []   [nio-8080-exec-9] c.a.w.s.WXPayReport            : report worker num: 6
+2024-01-09 15:17:19.301 - INFO []   [nio-8080-exec-9] c.a.w.s.WXPayReport            : report v1,WXPaySDK/3.0.9,OtUbLnX3Jzk2Uh94O2E9gmq03OCN5rP2,1704784639,414,api.mch.weixin.qq.com,false,6000,8000,0,0,0,6B9028EA47988DC1C0D303A5FCBEA6844E450B2A81C2001CDBD332F767817A31
+2024-01-09 15:17:19.301 - INFO []   [pool-3-thread-1] c.a.w.s.WXPayReport$2          : get first report msg: v1,WXPaySDK/3.0.9,OtUbLnX3Jzk2Uh94O2E9gmq03OCN5rP2,1704784639,414,api.mch.weixin.qq.com,false,6000,8000,0,0,0,6B9028EA47988DC1C0D303A5FCBEA6844E450B2A81C2001CDBD332F767817A31
+2024-01-09 15:17:19.301 - INFO []   [pool-3-thread-1] c.a.w.s.WXPayReport$2          : try get remain report msg
+2024-01-09 15:17:19.308 - INFO []   [nio-8080-exec-9] c.a.s.i.PayServiceImpl         : 支付下单出参：{return_msg=签名错误, return_code=FAIL}
+2024-01-09 15:17:24.784 - INFO []   [nio-8080-exec-9] c.a.c.AppController            : 微信授权code=null;amount=1
+2024-01-09 15:17:25.664 - INFO []   [nio-8080-exec-3] c.a.s.i.PayServiceImpl         : 提现入参：{amount=1, check_name=NO_CHECK, desc=账户提现, openid=o7KFbs-JFnIDBapvFQ0x-e7XvgVU, partner_trade_no=1345751f481b4881a28272f7d1663bca, spbill_create_ip=0:0:0:0:0:0:0:1}
+2024-01-09 15:17:25.814 - INFO []   [nio-8080-exec-3] c.a.w.s.WXPayReport            : report v1,WXPaySDK/3.0.9,7JEqmM1VEDusXXzZ5mHX5UvrfFpWjT7b,1704784645,141,api.mch.weixin.qq.com,false,6000,8000,0,0,0,82134FB2252298A21417A332559859BAACB647852946590531C571C7F3630F18
+2024-01-09 15:17:25.815 - INFO []   [pool-2-thread-1] c.a.w.s.WXPayReport$2          : get first report msg: v1,WXPaySDK/3.0.9,7JEqmM1VEDusXXzZ5mHX5UvrfFpWjT7b,1704784645,141,api.mch.weixin.qq.com,false,6000,8000,0,0,0,82134FB2252298A21417A332559859BAACB647852946590531C571C7F3630F18
+2024-01-09 15:17:25.815 - INFO []   [pool-2-thread-1] c.a.w.s.WXPayReport$2          : try get remain report msg
+2024-01-09 15:17:25.820 - INFO []   [nio-8080-exec-3] c.a.s.i.PayServiceImpl         : 提现出参：{mchid=1230000109, mch_appid=wx67c9da8404589ae3, err_code=PARAM_ERROR, return_msg=参数错误:商户号有误,无法查询商户信息, result_code=FAIL, err_code_des=参数错误:商户号有误,无法查询商户信息, return_code=SUCCESS}
+2024-01-09 15:18:00.005 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:18:00
+2024-01-09 15:18:00.013 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:18:00
+2024-01-09 15:19:00.013 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:19:00
+2024-01-09 15:19:00.016 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:19:00
+2024-01-09 15:20:00.010 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:20:00
+2024-01-09 15:20:00.012 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:20:00
+2024-01-09 15:21:00.009 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:21:00
+2024-01-09 15:21:00.012 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:21:00
+2024-01-09 15:22:00.018 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:22:00
+2024-01-09 15:22:00.026 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:22:00
+2024-01-09 15:23:38.152 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 12436 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 15:23:38.168 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 15:23:38.303 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : The Class-Path manifest attribute in D:\repository\xalan\xalan\2.7.0\xalan-2.7.0.jar referenced one or more files that do not exist: file:/D:/repository/xalan/xalan/2.7.0/xercesImpl.jar,file:/D:/repository/xalan/xalan/2.7.0/xml-apis.jar,file:/D:/repository/xalan/xalan/2.7.0/serializer.jar
+2024-01-09 15:23:38.303 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09 15:23:38.303 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09 15:23:41.662 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 15:23:41.677 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 15:23:41.677 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 15:23:41.678 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 15:23:41.802 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 15:23:41.803 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3499 ms
+2024-01-09 15:23:43.004 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 15:23:43.365 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'taskScheduler'
+2024-01-09 15:23:43.432 - INFO []   [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-01-09 15:23:43.451 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2024-01-09 15:23:43.491 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-09 15:23:43.514 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Started PersonApplication in 7.697 seconds (JVM running for 11.986)
+2024-01-09 15:24:00.013 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:24:00
+2024-01-09 15:24:00.047 - INFO []   [   scheduling-1] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2024-01-09 15:24:00.641 - INFO []   [   scheduling-1] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2024-01-09 15:24:00.729 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:24:00
+2024-01-09 15:24:54.899 - INFO []   [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : A cookie header was received [1701223120,1702348105,1702386012; Hm_lvt_0f31e3f991e5ab56193cdec1512552e0=1701223100,1701307394,1701418407,1702387739; Hm_lvt_abe5ea9dd5df65f0d92b49abcf5665b3=1702538308,1704247078,1704434346,1704708451; JSESSIONID=78D389FD30D398DBB28C2EF0369C0333] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-01-09 15:24:54.915 - INFO []   [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09 15:24:54.915 - INFO []   [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2024-01-09 15:24:54.927 - INFO []   [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Completed initialization in 12 ms
+2024-01-09 15:25:00.017 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:25:00
+2024-01-09 15:25:00.021 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:25:00
+2024-01-09 15:26:00.015 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:26:00
+2024-01-09 15:26:00.018 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:26:00
+2024-01-09 15:27:00.018 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:27:00
+2024-01-09 15:27:00.022 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:27:00
+2024-01-09 15:27:24.644 - INFO []   [nio-8080-exec-3] c.a.c.AppActionController      : 登录account:18823768418;password:1;area:0
+2024-01-09 15:28:00.010 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:28:00
+2024-01-09 15:28:00.014 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:28:00
+2024-01-09 15:28:31.916 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 7448 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 15:28:31.931 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 15:28:32.014 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : The Class-Path manifest attribute in D:\repository\xalan\xalan\2.7.0\xalan-2.7.0.jar referenced one or more files that do not exist: file:/D:/repository/xalan/xalan/2.7.0/xercesImpl.jar,file:/D:/repository/xalan/xalan/2.7.0/xml-apis.jar,file:/D:/repository/xalan/xalan/2.7.0/serializer.jar
+2024-01-09 15:28:32.015 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09 15:28:32.016 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09 15:28:35.646 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 15:28:35.663 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 15:28:35.663 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 15:28:35.664 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 15:28:35.812 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 15:28:35.812 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3796 ms
+2024-01-09 15:28:36.997 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 15:28:37.414 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'taskScheduler'
+2024-01-09 15:28:37.481 - INFO []   [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-01-09 15:28:37.498 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2024-01-09 15:28:37.537 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-09 15:28:37.560 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Started PersonApplication in 6.411 seconds (JVM running for 10.462)
+2024-01-09 15:28:51.480 - INFO []   [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : A cookie header was received [1701223120,1702348105,1702386012; Hm_lvt_0f31e3f991e5ab56193cdec1512552e0=1701223100,1701307394,1701418407,1702387739; Hm_lvt_abe5ea9dd5df65f0d92b49abcf5665b3=1702538308,1704247078,1704434346,1704708451; JSESSIONID=766576641F1A7E543B02ADE6F1B0B9B2] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-01-09 15:28:51.495 - INFO []   [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09 15:28:51.496 - INFO []   [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2024-01-09 15:28:51.512 - INFO []   [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Completed initialization in 16 ms
+2024-01-09 15:28:52.865 - INFO []   [nio-8080-exec-7] c.a.c.AppActionController      : 登录account:18823768418;password:1;area:0
+2024-01-09 15:28:52.920 - INFO []   [nio-8080-exec-7] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2024-01-09 15:28:53.555 - INFO []   [nio-8080-exec-7] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2024-01-09 15:28:59.171 - INFO []   [nio-8080-exec-3] c.a.c.AppController            : 微信授权code=null;amount=1
+2024-01-09 15:29:00.004 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:29:00
+2024-01-09 15:29:00.011 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:29:00
+2024-01-09 15:29:16.759 - INFO []   [nio-8080-exec-2] c.a.c.AppController            : 微信授权code=null;amount=1
+2024-01-09 15:30:00.007 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:30:00
+2024-01-09 15:30:00.010 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:30:00
+2024-01-09 15:31:00.006 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:31:00
+2024-01-09 15:31:00.015 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:31:00
+2024-01-09 15:32:00.008 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:32:00
+2024-01-09 15:32:00.012 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:32:00
+2024-01-09 15:33:00.006 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:33:00
+2024-01-09 15:33:00.007 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:33:00
+2024-01-09 15:33:37.403 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 9628 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 15:33:37.419 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 15:33:37.494 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : The Class-Path manifest attribute in D:\repository\xalan\xalan\2.7.0\xalan-2.7.0.jar referenced one or more files that do not exist: file:/D:/repository/xalan/xalan/2.7.0/xercesImpl.jar,file:/D:/repository/xalan/xalan/2.7.0/xml-apis.jar,file:/D:/repository/xalan/xalan/2.7.0/serializer.jar
+2024-01-09 15:33:37.495 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09 15:33:37.495 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09 15:33:40.863 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 15:33:40.881 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 15:33:40.882 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 15:33:40.882 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 15:33:41.011 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 15:33:41.011 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3515 ms
+2024-01-09 15:33:42.165 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 15:33:42.499 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'taskScheduler'
+2024-01-09 15:33:42.567 - INFO []   [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-01-09 15:33:42.583 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2024-01-09 15:33:42.619 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-09 15:33:42.640 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Started PersonApplication in 5.932 seconds (JVM running for 10.649)
+2024-01-09 15:33:47.102 - INFO []   [nio-8080-exec-1] o.a.j.l.DirectJDKLog           : A cookie header was received [1701223120,1702348105,1702386012; Hm_lvt_0f31e3f991e5ab56193cdec1512552e0=1701223100,1701307394,1701418407,1702387739; Hm_lvt_abe5ea9dd5df65f0d92b49abcf5665b3=1702538308,1704247078,1704434346,1704708451; JSESSIONID=C24E7DB2526922000738476147D95F22] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-01-09 15:33:47.117 - INFO []   [nio-8080-exec-1] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09 15:33:47.119 - INFO []   [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2024-01-09 15:33:47.136 - INFO []   [nio-8080-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 17 ms
+2024-01-09 15:33:48.906 - INFO []   [nio-8080-exec-8] c.a.c.AppActionController      : 登录account:18823768418;password:1;area:0
+2024-01-09 15:33:48.955 - INFO []   [nio-8080-exec-8] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2024-01-09 15:33:49.559 - INFO []   [nio-8080-exec-8] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2024-01-09 15:33:54.132 - INFO []   [nio-8080-exec-4] c.a.c.AppController            : 微信授权code=null;amount=1
+2024-01-09 15:34:00.008 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 15:34:00
+2024-01-09 15:34:00.016 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 15:34:00
+2024-01-09 17:16:14.930 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 11356 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 17:16:14.962 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 17:16:15.097 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : The Class-Path manifest attribute in D:\repository\xalan\xalan\2.7.0\xalan-2.7.0.jar referenced one or more files that do not exist: file:/D:/repository/xalan/xalan/2.7.0/xercesImpl.jar,file:/D:/repository/xalan/xalan/2.7.0/xml-apis.jar,file:/D:/repository/xalan/xalan/2.7.0/serializer.jar
+2024-01-09 17:16:15.098 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09 17:16:15.099 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09 17:16:18.945 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 17:16:18.961 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 17:16:18.961 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 17:16:18.962 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 17:16:19.100 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 17:16:19.101 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4000 ms
+2024-01-09 17:16:21.598 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 17:16:21.961 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'taskScheduler'
+2024-01-09 17:16:22.026 - INFO []   [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-01-09 17:16:22.044 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2024-01-09 17:16:22.081 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-09 17:16:22.107 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Started PersonApplication in 8.272 seconds (JVM running for 17.006)
+2024-01-09 17:17:01.873 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 14536 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 17:17:01.904 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 17:17:01.995 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : The Class-Path manifest attribute in D:\repository\xalan\xalan\2.7.0\xalan-2.7.0.jar referenced one or more files that do not exist: file:/D:/repository/xalan/xalan/2.7.0/xercesImpl.jar,file:/D:/repository/xalan/xalan/2.7.0/xml-apis.jar,file:/D:/repository/xalan/xalan/2.7.0/serializer.jar
+2024-01-09 17:17:01.995 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09 17:17:01.996 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09 17:17:06.327 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 17:17:06.343 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 17:17:06.343 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 17:17:06.344 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 17:17:06.502 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 17:17:06.502 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4506 ms
+2024-01-09 17:17:07.811 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 17:17:08.254 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'taskScheduler'
+2024-01-09 17:17:08.321 - INFO []   [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-01-09 17:17:08.339 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2024-01-09 17:17:08.376 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-09 17:17:08.395 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Started PersonApplication in 7.847 seconds (JVM running for 12.954)
+2024-01-09 17:17:11.518 - INFO []   [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : A cookie header was received [1701223120,1702348105,1702386012; Hm_lvt_0f31e3f991e5ab56193cdec1512552e0=1701223100,1701307394,1701418407,1702387739; Hm_lvt_abe5ea9dd5df65f0d92b49abcf5665b3=1702538308,1704247078,1704434346,1704708451] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-01-09 17:17:11.539 - INFO []   [nio-8080-exec-2] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09 17:17:11.539 - INFO []   [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2024-01-09 17:17:11.562 - INFO []   [nio-8080-exec-2] o.s.w.s.FrameworkServlet       : Completed initialization in 22 ms
+2024-01-09 17:17:13.656 - INFO []   [nio-8080-exec-9] c.a.c.AppActionController      : 登录account:18823768418;password:1;area:0
+2024-01-09 17:17:13.707 - INFO []   [nio-8080-exec-9] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2024-01-09 17:17:14.341 - INFO []   [nio-8080-exec-9] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2024-01-09 17:17:39.648 - INFO []   [nio-8080-exec-2] c.a.c.AppController            : 微信授权code=null;amount=1
+2024-01-09 17:17:45.500 - INFO []   [io-8080-exec-10] c.a.s.i.PayServiceImpl         : 支付下单入参：{body=账户充值, device_info=WEB, openid=o7KFbs-JFnIDBapvFQ0x-e7XvgVU, out_trade_no=3d607d6f1f2f4a9292ff3cd0a0495f2f, spbill_create_ip=0:0:0:0:0:0:0:1, total_fee=1, trade_type=MWEB}
+2024-01-09 17:17:45.994 - INFO []   [io-8080-exec-10] c.a.w.s.WXPayReport            : report worker num: 6
+2024-01-09 17:17:45.998 - INFO []   [io-8080-exec-10] c.a.w.s.WXPayReport            : report v1,WXPaySDK/3.0.9,7UiSfZmzi4LZtn0GQ4JNb0sMppZ7gGTT,1704791865,420,api.mch.weixin.qq.com,false,6000,8000,0,0,0,A8FBF710614C90B6760AE2B7834680139596B1610AB5F34201C62BD8FA966E21
+2024-01-09 17:17:45.998 - INFO []   [pool-2-thread-1] c.a.w.s.WXPayReport$2          : get first report msg: v1,WXPaySDK/3.0.9,7UiSfZmzi4LZtn0GQ4JNb0sMppZ7gGTT,1704791865,420,api.mch.weixin.qq.com,false,6000,8000,0,0,0,A8FBF710614C90B6760AE2B7834680139596B1610AB5F34201C62BD8FA966E21
+2024-01-09 17:17:45.999 - INFO []   [pool-2-thread-1] c.a.w.s.WXPayReport$2          : try get remain report msg
+2024-01-09 17:17:46.006 - INFO []   [io-8080-exec-10] c.a.s.i.PayServiceImpl         : 支付下单出参：{return_msg=签名错误, return_code=FAIL}
+2024-01-09 17:17:52.852 - INFO []   [io-8080-exec-10] c.a.c.AppController            : 微信授权code=null;amount=1
+2024-01-09 17:17:53.737 - INFO []   [nio-8080-exec-7] c.a.s.i.PayServiceImpl         : 提现入参：{amount=1, check_name=NO_CHECK, desc=账户提现, openid=o7KFbs-JFnIDBapvFQ0x-e7XvgVU, partner_trade_no=96527481c2be4f6d9d2b98b218338793, spbill_create_ip=0:0:0:0:0:0:0:1}
+2024-01-09 17:17:53.891 - INFO []   [nio-8080-exec-7] c.a.w.s.WXPayReport            : report v1,WXPaySDK/3.0.9,eMHozmnl9G253LQQYiYnEAx3ZkkkHUfq,1704791873,139,api.mch.weixin.qq.com,false,6000,8000,0,0,0,2AC72FCD0169DCDAE3303D707EE982C360E530707FF2A3B69512CF63ADDF4108
+2024-01-09 17:17:53.891 - INFO []   [pool-4-thread-1] c.a.w.s.WXPayReport$2          : get first report msg: v1,WXPaySDK/3.0.9,eMHozmnl9G253LQQYiYnEAx3ZkkkHUfq,1704791873,139,api.mch.weixin.qq.com,false,6000,8000,0,0,0,2AC72FCD0169DCDAE3303D707EE982C360E530707FF2A3B69512CF63ADDF4108
+2024-01-09 17:17:53.891 - INFO []   [pool-4-thread-1] c.a.w.s.WXPayReport$2          : try get remain report msg
+2024-01-09 17:17:53.895 - INFO []   [nio-8080-exec-7] c.a.s.i.PayServiceImpl         : 提现出参：{mchid=1230000109, mch_appid=wx67c9da8404589ae3, err_code=PARAM_ERROR, return_msg=参数错误:商户号有误,无法查询商户信息, result_code=FAIL, err_code_des=参数错误:商户号有误,无法查询商户信息, return_code=SUCCESS}
+2024-01-09 17:18:00.015 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 17:18:00
+2024-01-09 17:18:00.019 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 17:18:00
+2024-01-09 17:19:00.012 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 17:19:00
+2024-01-09 17:19:00.016 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 17:19:00
+2024-01-09 17:20:00.015 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 17:20:00
+2024-01-09 17:20:00.018 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 17:20:00
+2024-01-09 17:20:59.217 - INFO []   [      Thread-22] c.ExecutorConfigurationSupport : Shutting down ExecutorService 'taskScheduler'
+2024-01-09 17:20:59.219 - INFO []   [      Thread-22] c.ExecutorConfigurationSupport : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-01-09 17:20:59.219 - INFO []   [      Thread-22] c.z.h.HikariDataSource         : HikariPool-1 - Shutdown initiated...
+2024-01-09 17:20:59.240 - INFO []   [      Thread-22] c.z.h.HikariDataSource         : HikariPool-1 - Shutdown completed.
+2024-01-09 17:20:59.854 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 14536 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 17:20:59.855 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 17:21:03.932 - WARN []   [  restartedMain] o.m.s.m.ClassPathMapperScanner : No MyBatis mapper was found in '[com.app.dao]' package. Please check your configuration.
+2024-01-09 17:21:05.827 - WARN []   [  restartedMain] o.m.s.m.ClassPathMapperScanner : No MyBatis mapper was found in '[com]' package. Please check your configuration.
+2024-01-09 17:21:06.051 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 17:21:06.065 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 17:21:06.067 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 17:21:06.068 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 17:21:06.111 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 17:21:06.112 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6249 ms
+2024-01-09 17:21:06.357 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 17:21:06.905 - WARN []   [  restartedMain] c.s.AbstractApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\project\person_app\target\classes\mapper\UserMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: java.lang.TypeNotPresentException: Type com.app.medel.OrderDetil not present
+2024-01-09 17:21:06.905 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-01-09 17:21:06.906 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Stopping service [Tomcat]
+2024-01-09 17:21:06.982 - INFO []   [  restartedMain] valuationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-01-09 17:21:09.715 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 14536 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 17:21:09.739 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 17:21:13.368 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 17:21:13.369 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 17:21:13.370 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 17:21:13.371 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 17:21:13.403 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 17:21:13.403 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3623 ms
+2024-01-09 17:21:13.794 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 17:21:13.903 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'taskScheduler'
+2024-01-09 17:21:13.944 - INFO []   [  restartedMain] b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729
+2024-01-09 17:21:13.959 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2024-01-09 17:21:13.968 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-09 17:21:13.981 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Started PersonApplication in 4.62 seconds (JVM running for 258.527)
+2024-01-09 17:21:13.983 - INFO []   [  restartedMain] EvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-01-09 17:22:00.015 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 17:22:00
+2024-01-09 17:22:00.016 - INFO []   [   scheduling-1] c.z.h.HikariDataSource         : HikariPool-2 - Starting...
+2024-01-09 17:22:00.057 - INFO []   [   scheduling-1] c.z.h.HikariDataSource         : HikariPool-2 - Start completed.
+2024-01-09 17:22:00.065 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 17:22:00
+2024-01-09 17:23:00.006 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 17:23:00
+2024-01-09 17:23:00.008 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 17:23:00
+2024-01-09 17:24:00.014 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 17:24:00
+2024-01-09 17:24:00.020 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 17:24:00
+2024-01-09 17:25:00.010 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 17:25:00
+2024-01-09 17:25:00.012 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 17:25:00
+2024-01-09 17:26:00.017 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 17:26:00
+2024-01-09 17:26:00.021 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 17:26:00
+2024-01-09 17:27:00.011 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 17:27:00
+2024-01-09 17:27:00.015 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 17:27:00
+2024-01-09 17:28:00.014 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 17:28:00
+2024-01-09 17:28:00.022 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 17:28:00
+2024-01-09 17:29:00.006 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 17:29:00
+2024-01-09 17:29:00.009 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 17:29:00
+2024-01-09 17:30:00.009 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 17:30:00
+2024-01-09 17:30:00.012 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 17:30:00
+2024-01-09 17:31:00.015 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 17:31:00
+2024-01-09 17:31:00.017 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 17:31:00
+2024-01-09 17:32:00.001 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 17:32:00
+2024-01-09 17:32:00.004 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 17:32:00
+2024-01-09 19:21:06.456 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 13164 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 19:21:06.483 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 19:21:06.600 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : The Class-Path manifest attribute in D:\repository\xalan\xalan\2.7.0\xalan-2.7.0.jar referenced one or more files that do not exist: file:/D:/repository/xalan/xalan/2.7.0/xercesImpl.jar,file:/D:/repository/xalan/xalan/2.7.0/xml-apis.jar,file:/D:/repository/xalan/xalan/2.7.0/serializer.jar
+2024-01-09 19:21:06.600 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09 19:21:06.601 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09 19:21:11.131 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 19:21:11.162 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 19:21:11.162 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 19:21:11.163 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 19:21:11.342 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 19:21:11.343 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4742 ms
+2024-01-09 19:21:12.664 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 19:21:13.034 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'taskScheduler'
+2024-01-09 19:21:13.100 - WARN []   [  restartedMain] b.d.a.OptionalLiveReloadServer : Unable to start LiveReload server
+2024-01-09 19:21:13.115 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2024-01-09 19:21:13.133 - WARN []   [  restartedMain] c.s.AbstractApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2024-01-09 19:21:13.136 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Shutting down ExecutorService 'taskScheduler'
+2024-01-09 19:21:13.137 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-01-09 19:21:13.141 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Pausing ProtocolHandler ["http-nio-8080"]
+2024-01-09 19:21:13.142 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Stopping service [Tomcat]
+2024-01-09 19:21:13.157 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Stopping ProtocolHandler ["http-nio-8080"]
+2024-01-09 19:21:13.157 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Destroying ProtocolHandler ["http-nio-8080"]
+2024-01-09 19:21:13.167 - INFO []   [  restartedMain] valuationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-01-09 19:21:37.966 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Starting PersonApplication on DESKTOP-MGB43HL with PID 4448 (D:\project\person_app\target\classes started by huangyuyi in D:\project\person_app)
+2024-01-09 19:21:37.986 - INFO []   [  restartedMain] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2024-01-09 19:21:38.092 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : The Class-Path manifest attribute in D:\repository\xalan\xalan\2.7.0\xalan-2.7.0.jar referenced one or more files that do not exist: file:/D:/repository/xalan/xalan/2.7.0/xercesImpl.jar,file:/D:/repository/xalan/xalan/2.7.0/xml-apis.jar,file:/D:/repository/xalan/xalan/2.7.0/serializer.jar
+2024-01-09 19:21:38.093 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-01-09 19:21:38.093 - INFO []   [  restartedMain] o.s.b.l.DeferredLog            : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-01-09 19:21:41.459 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8080 (http)
+2024-01-09 19:21:41.474 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-09 19:21:41.475 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2024-01-09 19:21:41.475 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2024-01-09 19:21:41.626 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2024-01-09 19:21:41.627 - INFO []   [  restartedMain] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3533 ms
+2024-01-09 19:21:43.234 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2024-01-09 19:21:43.597 - INFO []   [  restartedMain] c.ExecutorConfigurationSupport : Initializing ExecutorService 'taskScheduler'
+2024-01-09 19:21:43.657 - WARN []   [  restartedMain] b.d.a.OptionalLiveReloadServer : Unable to start LiveReload server
+2024-01-09 19:21:43.670 - INFO []   [  restartedMain] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8080"]
+2024-01-09 19:21:43.708 - INFO []   [  restartedMain] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8080 (http) with context path ''
+2024-01-09 19:21:43.728 - INFO []   [  restartedMain] o.s.b.StartupInfoLogger        : Started PersonApplication in 6.739 seconds (JVM running for 11.374)
+2024-01-09 19:22:00.017 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 19:22:00
+2024-01-09 19:22:00.049 - INFO []   [   scheduling-1] c.z.h.HikariDataSource         : HikariPool-1 - Starting...
+2024-01-09 19:22:00.639 - INFO []   [   scheduling-1] c.z.h.HikariDataSource         : HikariPool-1 - Start completed.
+2024-01-09 19:22:00.722 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 19:22:00
+2024-01-09 19:22:17.612 - INFO []   [nio-8080-exec-3] o.a.j.l.DirectJDKLog           : A cookie header was received [1701223120,1702348105,1702386012; Hm_lvt_0f31e3f991e5ab56193cdec1512552e0=1701223100,1701307394,1701418407,1702387739; JSESSIONID=FAB90E0A99EF1ED3E58F6E0F2CE41A40; oemid=; oemname=; Hm_lvt_abe5ea9dd5df65f0d92b49abcf5665b3=1704247078,1704434346,1704708451,1704794148; Hm_lpvt_abe5ea9dd5df65f0d92b49abcf5665b3=1704798179] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-01-09 19:22:17.627 - INFO []   [nio-8080-exec-3] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-09 19:22:17.627 - INFO []   [nio-8080-exec-3] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2024-01-09 19:22:17.643 - INFO []   [nio-8080-exec-3] o.s.w.s.FrameworkServlet       : Completed initialization in 16 ms
+2024-01-09 19:22:19.711 - INFO []   [nio-8080-exec-7] c.a.c.AppActionController      : 登录account:18823768418;password:1;area:0
+2024-01-09 19:23:00.022 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 19:23:00
+2024-01-09 19:23:00.150 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 19:23:00
+2024-01-09 19:24:00.011 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 19:24:00
+2024-01-09 19:24:00.014 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 19:24:00
+2024-01-09 19:25:00.006 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器开始执行，开始时间：2024-01-09 19:25:00
+2024-01-09 19:25:00.009 - INFO []   [   scheduling-1] c.a.s.KaiMaTask                : 1.关闭支付定时器执行结束，结束时间：2024-01-09 19:25:00

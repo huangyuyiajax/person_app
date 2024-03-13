@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>登录</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+    }
+    header {
+        display: block;
+        height:10rem;
+        padding-top: .2rem;
+        background-size: 100% 100%;
+        background-color: #2e8ded;
+    }
+    h1 {
+        margin: 30px 0;
+        padding: 2rem 1.56rem;
+        font-size: 2rem;
+        color: #fff;
+    }
+    .login-tab{
+        margin-top: 2.32rem;
+        background:#fff;
+    }
+    .tab{
+        display: flex;
+        height: 3rem;
+        padding: 0 .4rem;
+        border-bottom: 1px solid #ddd;
+    }
+    .tab li{
+        position: relative;
+        -webkit-box-flex:1;
+        flex:1;
+        height: 1rem;
+        line-height: 1rem;
+        margin:0 .4rem;
+        text-align: center;
+        font-size: 1.32rem;
+        -webkit-tap-highlight-color: transparent;
+        color:#2e8ded;
+    }
+    .tab .no::after{
+        content:'';
+        display: block;
+        position: absolute;
+        left:0;
+        bottom:-1px;
+        width:100%;
+        height: 2px;
+        background:#2e8ded;
+        top:48px;
+    }
+    .tab-content li{
+        margin: 3.5rem 0 0 2.5rem;
+    }
+    .input-item {
+        box-sizing: border-box;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        margin-right: 2.3rem;
+    }
+    .input-item input{
+        -webkit-appearance: none;
+        margin: 6px;
+        border: none;
+        outline: none;
+        -webkit-box-flex: 1;
+        flex: 1;
+        padding: 0.5rem .14rem;
+        font-size: .9rem;
+        color: #171717;
+        margin-top: 1rem;
+    }
+    .input-item:first-child{
+        margin-bottom: 2.26rem;
+    }
+    .login{
+        padding: 40px;
+    }
+    .login button{
+        display: block;
+        margin: 0 auto;
+        width: 20rem;
+        height: 3rem;
+        border: 0;
+        background: #2e8ded;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+    .tips{
+        margin-top: .38rem;
+        text-align: center;
+        color: #616161;
+        font-size: 0.8rem;
+    }
+</style>
+<body>
+<header>
+    <h1>欢迎登录系统</h1>
+</header>
+<div class="login-tab">
+    <ul class="tab">
+        <li class="no">账号密码登录</li>
+    </ul>
+    <ul class="tab-content">
+        <li>
+            <div class="input-item tel-item" style="position:relative;">
+                 <span style="position: absolute;width:100%;right:0;overflow:hidden;height:40%;">
+                    <select id="accounts" style="width:97%;height:100%;border: none;float:right" onchange="changheAccounts(this)"></select>
+                 </span>
+                <input type="text" id="account" maxlength="11" placeholder="请输入手机号码" value="" style="z-index:1;margin-right: 20px">
+            </div>
+            <div class="input-item code-item">
+                <input type="password" id="password" maxlength="6" placeholder="请输入密码" value="">
+            </div>
+            <div style="text-align: center;margin-top: 2rem;">
+                香港
+                <input type="radio" name="area" value="0" checked style="margin-right: 50px">
+                澳门
+                <input type="radio" name="area" value="1" style="margin-right: 50px">
+                台湾
+                <input type="radio" name="area" value="2" style="margin-right: 30px">
+            </div>
+        </li>
+    </ul>
+    <div class="login">
+        <button type="text" value="登录" onclick="login()">登录</button>
+    </div>
+    　<p class="tips">没有注册过的手机号会自动注册
+    </p>
+</div>
+</body>
+<script type="text/javascript" src="/js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="/js/com.js"></script>
+<script type="text/javascript" src="/js/app/login.js?t=1"></script>
+<script type="text/javascript" src="/js/layer/layer.js"></script>
+</html>

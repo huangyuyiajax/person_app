@@ -1,0 +1,37 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "34243228",
+      "name": "删除2",
+      "font_class": "shanchu2",
+      "unicode": "e737",
+      "unicode_decimal": 59191
+    },
+    {
+      "icon_id": "34243250",
+      "name": "添加",
+      "font_class": "tianjia",
+      "unicode": "e738",
+      "unicode_decimal": 59192
+    },
+    {
+      "icon_id": "34436743",
+      "name": "triangleDoubleLineLeft_1",
+      "font_class": "triangleDoubleLineLeft_1",
+      "unicode": "e669",
+      "unicode_decimal": 58985
+    },
+    {
+      "icon_id": "34436746",
+      "name": "triangleDoubleLineRight_1",
+      "font_class": "triangleDoubleLineRight_1",
+      "unicode": "e66a",
+      "unicode_decimal": 58986
+    }
+  ]
+}

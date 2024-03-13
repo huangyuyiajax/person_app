@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title></title>
+</head>
+<style>
+    *{padding: 0;margin: 0;}
+    html{height: 100%;}
+    div.navbar{
+        overflow: hidden;
+        background-color: #2e8ded;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    div.navbar a{
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 0px;
+        text-decoration: none;
+        font-size: 17px;
+        width: 20%;
+    }
+    div.navbar a.acctive{
+        color: #eeff1e;
+    }
+    .span-xh{
+        flex: 0.5;
+    }
+    .span-text-1{
+        flex: 1;
+    }
+    .span-text-2{
+        flex: 1.5;
+    }
+    .title-left{
+        margin-right: 20px;text-decoration: none;
+    }
+    .title-right{
+        margin-left: 20px;text-decoration: none;
+    }
+    .outer{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 55px;
+        display: flex;
+        -webkit-box-orient:vertical;
+        flex-direction:column;
+    }
+    .body{
+        width: 100%;
+        height: 100%;
+        -webkit-box-flex: 1;
+        background-color: #fff;
+        overflow-y: scroll;
+    }
+</style>
+<link rel="stylesheet" type="text/css" href="/css/iconfont/iconfont.css">
+<link rel="stylesheet" type="text/css" href="/css/lottery.css" />
+<link rel="stylesheet" type="text/css" href="/css/recordAll.css" />
+<link rel="stylesheet" type="text/css" href="/css/recordDetil.css" />
+<link rel="stylesheet" type="text/css" href="/css/personDetil.css" />
+<link rel="stylesheet" type="text/css" href="/css/calculation.css" />
+<link rel="stylesheet" type="text/css" href="/css/dropload/dropload.css">
+<link rel="stylesheet" type="text/css" href="/css/swiper4/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="/css/swiper4/animate.min.css">
+<body>
+<div>
+    <div class="outer swiper-container">
+        <div class="swiper-wrapper">
+            <div class="body recordDetil swiper-slide" id="recordDetil">
+                <header>
+                    <p>历史开奖<a class="iconfont title-right" href="#">&#xe66a;</a></p>
+                </header>
+                <div class="content">
+                    <ul>
+                        <li>
+                            <span>期数</span>
+                            <span>开奖时间</span>
+                            <span>特码</span>
+                            <span>操作</span>
+                        </li>
+                    </ul>
+                    <ul class="data-list">
+
+                    </ul>
+                </div>
+            </div>
+            <div class="body swiper-slide" id="lottery">
+                <header>
+                    <p><a class="iconfont title-left" href="#">&#xe669;</a><span id="scheduled">未排期</span><a class="iconfont title-right" href="#">&#xe66a;</a></p>
+                </header>
+                <div class="content">
+                    <div style="text-align: center;padding: 0.2em">
+                        <span>赔率：1赔</span><input type="number" style="width: 10%;line-height:1.2em;text-align: center;" id="odds" maxlength="5" onchange="savesetup()" onkeyup="clearNoNum(this)"/>
+                        <span>，开码前</span><input type="number" style="width: 10%;line-height:1.2em;text-align: center;" id="minutes" maxlength="4" onchange="savesetup()" onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^0-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}"/><span>分钟停止投注</span>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>开奖期数</th>
+                                <th>开奖日期</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                </th>
+                                <th width="40%">
+                                    <label>
+                                        <input type="text" id="name" value="" maxlength="25" onclick="setLotteryName(this)"/>
+                                    </label>
+                                </th>
+                                <th width="40%">
+                                    <label>
+                                        <input type="text" id="date" value="" maxlength="20" readonly/>
+                                    </label>
+                                </th>
+                                <th width="30%">
+                                    <span style="background: #4579c5;color: #fff;padding: 5px 10px;" onclick="paiqi()">排期</span>
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="edit">
+                        <input type="text" id="code" value="" maxlength="2" placeholder="填入特码" style="width: 99%;line-height: 3em;text-align: center;" onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^0-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}if(this.value> 49)value=49"
+                               onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^0-9]/g,'0')}else{this.value=this.value.replace(/\D/g,'')}if(this.value> 49)value=49"/>
+                    </div>
+                    <div class="edit">
+                        <a href="#" class="btn-a" onclick="kaijiang()">开奖</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="body swiper-slide" id="recordAll">
+            <header>
+                <p><a class="iconfont title-left" href="#">&#xe669;</a>投注列表<a class="iconfont title-right" href="#">&#xe66a;</a></p>
+            </header>
+            <div class="content">
+                <ul>
+                    <li>
+                        <span class="span1">期数</span>
+                        <span class="span2">账号</span>
+                        <span class="span1">姓名</span>
+                        <span class="span2">结果</span>
+                        <span class="span1">操作</span>
+                    </li>
+                </ul>
+                <ul class="data-list">
+
+                </ul>
+            </div>
+        </div>
+            <div class="body calculation swiper-slide" id="calculation">
+                <header>
+                    <p><a class="iconfont title-left" href="#">&#xe669;</a>当期投注汇总<a class="iconfont title-right" href="#">&#xe66a;</a></p>
+                </header>
+                <div class="content">
+                </div>
+            </div>
+            <div class="body calculation swiper-slide" id="calculation_all">
+                <header>
+                    <p><a class="iconfont title-left" href="#">&#xe669;</a>往期投注汇总<a class="iconfont title-right" href="#">&#xe66a;</a></p>
+                </header>
+                <div class="content">
+                </div>
+            </div>
+            <div class="body recordDetil swiper-slide" id="recordDetil_report">
+                <header>
+                    <p><a class="iconfont title-left" href="#">&#xe669;</a>投注统计<a class="iconfont title-right" href="#">&#xe66a;</a></p>
+                </header>
+                <div class="content">
+
+                </div>
+            </div>
+            <div class="body swiper-slide" id="personDetil">
+                <header>
+                    <p><a class="iconfont title-left" href="#">&#xe669;</a>会员信息<a class="iconfont title-right" href="#">&#xe66a;</a></p>
+                </header>
+                <div class="content">
+                    <ul>
+                        <li>
+                            <span class="span-xh">序号</span>
+                            <span class="span-text-2">账号</span>
+                            <span class="span-text-1">姓名</span>
+                            <span class="span-text-1">账户余额</span>
+                            <span class="span-text-1">操作</span>
+                        </li>
+                    </ul>
+                    <ul class="data-list">
+
+                    </ul>
+                </div>
+            </div>
+            <div class="body calculation swiper-slide swiper-no-swiping" id="calculation_person">
+                <div style="width: 150%;overflow: scroll;">
+                    <header>
+                        <p><a class="iconfont title-left" href="#" style="display: none">&#xe669;</a>会员统计</p>
+                    </header>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <span class="span-xh">序号</span>
+                                <span class="span-text-2">账号</span>
+                                <span class="span-text-1">姓名</span>
+                                <span class="span-text-1">充值</span>
+                                <span class="span-text-1">投注</span>
+                                <span class="span-text-1">中奖</span>
+                                <span class="span-text-1">提现</span>
+                                <span class="span-text-1">盈利</span>
+                                <span class="span-text-1">余额</span>
+                            </li>
+                        </ul>
+                        <ul class="data-list">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar">
+        <a href="#" class="acctive" data-value="0">开奖</a>
+        <a href="#" data-value="1">排期</a>
+        <a href="#" data-value="2">列表</a>
+        <a href="#" data-value="3">统计</a>
+        <a href="#" data-value="6">会员</a>
+    </div>
+</div>
+<script type="text/template" id="recordDetilList">
+    {{each list item j}}
+    <li>
+        <span>{{item.name}}</span>
+        <span>{{item.date}}</span>
+        <span>{{item.shengxiao}}{{item.code}}</span>
+        <span><a href="#" onclick="showDeil(this)">展开</a></span>
+    </li>
+    <div class="info">
+        <span class="detil">投注总人数：{{item.numberSum}}</span>
+        <span class="detil">投注总金额：{{item.totalSum}}元</span><br>
+        <span class="detil">中奖总人数：{{item.number}}</span>
+        <span class="detil">中奖总金额：{{item.total}}元</span>
+        <table cellspacing="0">
+            <tr>
+                <td>序号</td>
+                <td>账号</td>
+                <td>姓名</td>
+                <td>金额</td>
+            </tr>
+        {{each item.list v i}}
+            <tr>
+                <td>{{i+1}}</td>
+                <td>{{v.account}}</td>
+                <td>{{v.userName}}</td>
+                <td>{{v.price}}</td>
+            </tr>
+        {{/each}}
+        </table>
+    </div>
+    {{/each}}
+</script>
+<script type="text/template" id="recordDetilReportList">
+    <ul>
+        <li>
+            <span>合计</span>
+        </li>
+        <div class="infoShow">
+            <span class="detil">投注总单数：{{tzs}}单</span>
+            <span class="detil">投注总金额：{{tz}}元</span><br>
+            <span class="detil">未开奖总单数：{{wkjs}}单</span>
+            <span class="detil">未开总金额：{{wkj}}元</span><br>
+            <span class="detil">中奖总单数：{{zjs}}单</span>
+            <span class="detil">中奖总金额：{{zj}}元</span><br>
+            <span class="detil">总收入：{{sr}}元</span>
+            <span class="detil">总支出：{{zc}}元</span><br>
+            <span class="detil">总盈利：{{yl}}元</span>
+        </div>
+    </ul>
+    {{each reportDtos v i}}
+    <ul>
+        <li>
+            <span>{{v.area=='0'?'香港':(v.area=='1'?'澳门':'台湾')}}</span>
+        </li>
+        <div class="infoShow">
+            <span class="detil">投注总单数：{{v.tzs}}单</span>
+            <span class="detil">投注总金额：{{v.tz}}元</span><br>
+            <span class="detil">未开奖总单数：{{v.wkjs}}单</span>
+            <span class="detil">未开总金额：{{v.wkj}}元</span><br>
+            <span class="detil">中奖总单数：{{v.zjs}}单</span>
+            <span class="detil">中奖总金额：{{v.zj}}元</span><br>
+            <span class="detil">总收入：{{v.sr}}元</span>
+            <span class="detil">总支出：{{v.zc}}元</span><br>
+            <span class="detil">总盈利：{{v.yl}}元</span>
+        </div>
+    </ul>
+    {{/each}}
+</script>
+<script type="text/template" id="calculationList">
+    <ul>
+        <li>
+            <span>序号</span>
+            <span>特码</span>
+            <span>购买人数</span>
+            <span>购买金额</span>
+        </li>
+        {{if list.length==0}}
+        <li><span style="text-align: center;width: 100%;">暂无数据</span></li>
+        {{else}}
+        <li>
+            <span></span>
+            <span>合计</span>
+            <span>{{number}}</span>
+            <span>{{total}}</span>
+        </li>
+        {{each list v i}}
+        <li>
+            <span>{{i+1}}</span>
+            <span>{{v.shengxiao}}{{v.code}}</span>
+            <span>{{v.number}}</span>
+            <span>{{v.total}}</span>
+        </li>
+        {{/each}}
+        {{/if}}
+    </ul>
+</script>
+<script type="text/template" id="recordAllList">
+    {{each list item j}}
+    <li>
+        <span class="span1">{{item.name}}</span>
+        <span class="span2">{{item.account}}</span>
+        <span class="span1">{{item.userName}}</span>
+        <span class="span2">{{item.code?(item.price?'中'+item.price+'元':'未中奖'):'未开奖'}}</span>
+        <span class="span1"><a href="#" onclick="showDeil(this)">展开</a></span>
+    </li>
+    <div class="info">
+        <span class="detil">总金额：{{item.total}}</span>
+        {{if !item.code}}
+        <span class="detil">开奖时间：{{item.date}}</span>
+        <span class="detil">投注时间：{{item.orderTime}}</span>
+        <span><a href="#" class="oder-by">排序</a></span>
+        {{else}}
+        <span class="detil">特码：{{item.shengxiao}}{{item.code}}</span><br>
+        <span class="detil">投注时间：{{item.orderTime}}</span><br>
+        <span class="detil">开奖时间：{{item.date}}</span>
+        <span><a href="#" class="oder-by">排序</a></span>
+        {{/if}}
+        <table cellspacing="0">
+            <tr>
+                <td width="13%">特码</td>
+                <td width="17%">金额</td>
+                <td width="5%"></td>
+                <td width="13%">特码</td>
+                <td width="17%">金额</td>
+                <td width="5%"></td>
+                <td width="13%">特码</td>
+                <td width="17%">金额</td>
+            </tr>
+            {{each item.list v i}}
+            <tr class="code">
+                <td>{{v.shengxiao1}}{{v.code1}}</td>
+                <td>{{v.price1}}</td>
+                <td></td>
+                <td>{{v.shengxiao2}}{{v.code2}}</td>
+                <td>{{v.price2}}</td>
+                <td></td>
+                <td>{{v.shengxiao3}}{{v.code3}}</td>
+                <td>{{v.price3}}</td>
+            </tr>
+            {{/each}}
+            {{each item.list2 v i}}
+            <tr class="shengxiao" hidden>
+                <td>{{v.shengxiao1}}{{v.code1}}</td>
+                <td>{{v.price1}}</td>
+                <td></td>
+                <td>{{v.shengxiao2}}{{v.code2}}</td>
+                <td>{{v.price2}}</td>
+                <td></td>
+                <td>{{v.shengxiao3}}{{v.code3}}</td>
+                <td>{{v.price3}}</td>
+            </tr>
+            {{/each}}
+        </table>
+    </div>
+    {{/each}}
+</script>
+<script type="text/template" id="userAllList">
+    {{each list v i}}
+    <li {{if v.picture}}onclick="showPic(this)"{{/if}}>
+        <span class="span-xh">{{i+1}}</span>
+        <span class="span-text-2">{{v.account}}</span>
+        <span class="span-text-1">{{v.name}}</span>
+        <span class="span-text-1">{{v.cash}}</span>
+        {{if v.account=='10000'}}
+        <span class="span-text-1"><a href="#" onclick="logout(event)">退出</a></span>
+        {{else}}
+        <span class="span-text-1"><a href="#" onclick="recharge(event,'{{v.id}}')">充值</a></span>
+        {{/if}}
+        {{if v.picture}}
+        <div style="display:none;position:fixed;z-index:999;bottom:0;background: #0e0e0e;width: 100%;height: 100%" onclick="event.stopPropagation();$(this).hide()" class="pic">
+            <div style="position: relative;margin: 0 auto;top: 50%;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);">
+                <img src="{{v.picture}}" style="width: 100%">
+            </div>
+        </div>
+        {{/if}}
+    </li>
+    {{/each}}
+</script>
+<script type="text/template" id="calculation_person_list">
+    {{if !list||list.length==0}}
+    <li><span style="text-align: center;width: 100%;">暂无数据</span></li>
+    {{else}}
+    <li>
+        <span class="span-xh">&nbsp;</span>
+        <span class="span-text-2">&nbsp;</span>
+        <span class="span-text-1">合计</span>
+        <span class="span-text-1">{{cz}}</span>
+        <span class="span-text-1">{{xd-td}}</span>
+        <span class="span-text-1">{{zj}}</span>
+        <span class="span-text-1">{{tx}}</span>
+        <span class="span-text-1">{{yl}}</span>
+        <span class="span-text-1">{{cash}}</span>
+    </li>
+    {{each list v i}}
+    <li>
+        <span class="span-xh">{{i+1}}</span>
+        <span class="span-text-2">{{v.account}}</span>
+        <span class="span-text-1">{{v.name}}</span>
+        <span class="span-text-1">{{v.cz}}</span>
+        <span class="span-text-1">{{v.xd-v.td}}</span>
+        <span class="span-text-1">{{v.zj}}</span>
+        <span class="span-text-1">{{v.tx}}</span>
+        <span class="span-text-1">{{v.yl}}</span>
+        <span class="span-text-1">{{v.cash}}</span>
+    </li>
+    {{/each}}
+    {{/if}}
+</script>
+</body>
+<script type="text/javascript" src="/js/layer/laydate.js"></script>
+<script type="text/javascript" src="/js/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="/js/com.js"></script>
+<script type="text/javascript" src="/js/app/admin.js?t=1"></script>
+<script type="text/javascript" src="/js/layer/layer.js"></script>
+<script type="text/javascript" src="/js/template-web.js"></script>
+<script type="text/javascript" src="/css/iconfont/iconfont.js"></script>
+<script type="text/javascript" src="/js/dropload/dropload.min.js"></script>
+<script type="text/javascript" src="/js/dropload/dropload.js"></script>
+<script type="text/javascript" src="/js/swiper4/swiper.min.js"></script>
+<script type="text/javascript" src="/js/swiper4/swiper.animate.min.js"></script>
+</html>

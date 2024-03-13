@@ -1,0 +1,32 @@
+body{font-size:0.8rem;}
+ul{padding:0;margin:0;list-style:none;}
+.bgColor{background:#f0f0f0; overflow-y: scroll;}
+.button.btn-height{height:2.2rem;border-radius:0.25rem;background:#20BF72;line-height:2.2rem;font-size:0.8rem;}
+.button.btn-height.active,.button.btn-height:active{background:#25ca7a;}
+a.btn_cancel,a.btn_enter{width:49%;float:left}
+a.btn_enter{float:right}
+.pay_content{background-color:#fff;padding:1.5rem 0}
+.pay_1{text-align:center;font-size:0.7rem;margin:0;color:#888}
+.pay_2{text-align:center;margin:0}
+.pay_2 span{font-size:0.8rem;font-family:"microsoft yahei"}
+.pay_2 em{font-style:normal;color:#000;font-size:2rem;}
+.noMargin{margin:0}
+.noMargin a.btn_cancel{background: #888}
+.pay_method{padding:0.5rem;margin:0}
+.pay_wechat{-webkit-box-align:start;-webkit-align-items:flex-start;align-items:flex-start;flex-direction:row;-webkit-flex-direction:row;flex-direction:row;display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:-o-flex;display:flex;-ms-align-items:center;align-items:center;height:2.2rem;background:#fff;padding:0 0.5rem}
+.icon-wechat{background:url(../images/wx_chat.png) no-repeat center center;background-size:cover;width:1rem;height:1rem;}
+.wechat_text{flex:1;padding:0 0.25rem}
+.icon-select{position:relative;border-radius:100%;width:0.9rem;height:0.9rem;background:#fff;border:1px solid #20BF72;display: inline-block;}
+.icon-select.active{background:#20BF72;}
+.icon-select.active::before{height:2px;width:5px;font-size:0;line-height:0;background:#fff;position:absolute;left:2px;top:8px;content:"";display:block;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg);}
+.icon-select.active::after{height:2px;width:10px;font-size:0;line-height:0;background:#fff;position:absolute;left:4px;top:7px;content:"";display:block;-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg);}
+.pay_wechat_1{background:none;}
+.pay_wechat_1 .wechat_text{font-size:0.64rem;}
+.pay_wechat_1 .wechat_text a{color:#20BF72}
+
+/*.my-skin .modal-button:first-child{background: #20BF72;color: #fff;}*/
+.xieyi_content{padding:0.5rem;}
+.xieyi_content h1{font-size:0.8rem;margin:0}
+.xieyi_content p{word-break:break-all;}
+.fontWeight{font-weight:bold;}
+.pay_content{margin-top:0.5rem;}

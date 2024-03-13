@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.app.dao.UserDao">
+    <select id="selectUser" resultType="User" parameterType="String">
+        select * from user where account=#{account} limit 1;
+    </select>
+    <select id="selectUserById" resultType="User" parameterType="Integer">
+        select * from user where id=#{id} limit 1;
+    </select>
+    <insert id="insertUser" parameterType="User" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO user(account, password, name, sex, idCard, picture) values (#{account},#{password},#{name},#{sex},#{idCard},#{picture})
+    </insert>
+    <update id="updateUser">
+        update user set password=#{password},name=#{name},sex=#{sex},idCard=#{idCard}
+        <if test="picture!=null and picture!=''">
+            ,picture=#{picture}
+        </if>
+         where id=#{id}
+    </update>
+    <update id="updateUserCash">
+        update user set cash=#{cash} where id=#{id}
+    </update>
+    <insert id="insertOrder" parameterType="Order" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO `order`(userId, lotteryId) values (#{userId},#{lotteryId})
+    </insert>
+    <insert id="insertOrderDetilBatch" useGeneratedKeys="true" keyProperty="id">
+        <foreach collection="list" item="item">
+            INSERT INTO `orderdetil`(orderId, code, price) values (#{item.orderId},#{item.code},#{item.price});
+        </foreach>
+    </insert>
+    <select id="selectOrderByUserId" resultType="OrderDto" parameterType="Integer">
+        select o.id,o.date orderTime,l.name,l.code,l.date,d.price from `order` o LEFT JOIN lottery l on o.lotteryId=l.id
+        LEFT JOIN `orderdetil` d on o.id=d.orderId and CAST(l.`code` as SIGNED)=CAST(d.`code` as SIGNED) where userId=#{userId} and l.area=#{area}
+        order by o.date desc
+        LIMIT #{currIndex}, #{pageSize};
+    </select>
+    <select id="selectOrderDetilByOrderId" resultType="OrderDetil" parameterType="Integer">
+        select * from `orderdetil` where orderId=#{orderId} order by code asc;
+    </select>
+    <select id="selectOrderDetilByOrderId2" resultType="OrderDetil" parameterType="Integer">
+        select o.* from `orderdetil`o INNER JOIN ordercode c on o.code=c.code where orderId=#{orderId} order by c.id asc;
+    </select>
+    <insert id="insertLottery" parameterType="Lottery" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO `lottery`(area, name, code, date) values (#{area},#{name},#{code},#{date})
+    </insert>
+    <update id="deleteOrder">
+        delete from `order` where id=#{id}
+    </update>
+    <update id="deleteOrderDetil">
+        delete from `orderdetil` where orderId=#{orderId}
+    </update>
+    <select id="selectOrderById" resultType="Order" parameterType="Integer">
+        select * from `order` where id=#{id} and userId=#{userId} LIMIT 1;
+    </select>
+    <select id="selectLottery" resultType="Lottery" parameterType="Integer">
+        select * from `lottery` where id=#{id} LIMIT 1;
+    </select>
+    <select id="findNowLottery" resultType="Lottery">
+        select * from `lottery` where code is null and area=#{area} LIMIT 1;
+    </select>
+    <select id="findMaxLotteryName" resultType="Lottery">
+        select max(name) as name from `lottery` where area=#{area} LIMIT 1;
+    </select>
+    <insert id="insertBill" parameterType="Bill" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO `bill`(userId, orderId, paybillId, outTradeNo, type, bala, price, cash) values (#{userId},#{orderId},#{paybillId},#{outTradeNo},#{type},#{bala},#{price},#{cash})
+    </insert>
+    <select id="selectBillList" resultType="Bill" parameterType="Integer">
+        select * from `bill` where userId=#{userId} order by id desc LIMIT #{currIndex}, #{pageSize};
+    </select>
+    <update id="updateLottery">
+        update `lottery` set name=#{name},code=#{code},date=#{date} where id=#{id}
+    </update>
+    <select id="selectAllLotteryDtoList" resultType="LotteryDto">
+        select id,`name`,`code`,date,sum(if(total>0,1,0)) number,count(userId) numberSum,sum(total)total,sum(totalSum)totalSum
+        from (
+        select o.userId,l.id,l.`name`,l.`code`,l.date,SUM(if(CAST(l.`code` as SIGNED)=CAST(d.`code` as SIGNED),d.price,0)) total,ifnull(SUM(d.price),0) totalSum
+        from `lottery` l LEFT JOIN `order` o on l.id=o.lotteryId
+        LEFT JOIN orderdetil d on o.id=d.orderId where l.`code` is not null and l.area=#{area}
+        GROUP BY o.userId,l.id,l.`name`,l.`code`,l.date
+        )t GROUP BY id,`name`,`code`,date  order by date desc LIMIT #{currIndex}, #{pageSize};
+    </select>
+    <select id="loadRecordDetilRepList" resultType="ReportDto">
+        select area,CAST(sum(xds-tds)as decimal(16,0)) tzs,CAST(sum(zjs)as decimal(16,0)) zjs,CAST(sum(wxds-wtds)as decimal(16,0)) wkjs,
+        CAST(sum(xd-td)as decimal(16,0)) tz,CAST(sum(zj)as decimal(16,0)) zj,CAST(sum(wxd-wtd)as decimal(16,0)) wkj,
+        CAST(sum(sr)as decimal(16,0)) sr,CAST(sum(zc)as decimal(16,0)) zc,CAST(sum(yl)as decimal(16,0))yl from (
+        select l.area,
+        case when type='2' then 1 else 0 end xds,
+        case when type='3' then 1 else 0 end tds,
+        case when type='4' then 1 else 0 end zjs,
+        case when l.`code` is null and type='2' then 1 else 0 end wxds,
+        case when l.`code` is null and type='3' then 1 else 0 end wtds,
+        case when type='2' then price else 0 end xd,
+        case when type='3' then price else 0 end td,
+        case when type='4' then price/l.odds else 0 end zj,
+        case when l.`code` is null and type='2' then price else 0 end wxd,
+        case when l.`code` is null and type='3' then price else 0 end wtd,
+        case when l.`code` is not null and type='4' then price else 0 end zc,
+        case when l.`code` is not null and type='2' then price when l.`code` is not null and type='3' then -price else 0 end sr,
+        case when l.`code` is not null and type='2' then price when l.`code` is not null and type='3' then -price when l.`code` is not null and type='4' then -price else 0 end yl
+        from `order` o INNER join lottery l on o.lotteryId =l.id INNER JOIN bill b on b.orderId=o.id
+        )t GROUP BY area
+    </select>
+    <select id="loadRecordDetilRepListSum" resultType="ReportDto">
+        select CAST(sum(xds-tds)as decimal(16,0)) tzs,CAST(sum(zjs)as decimal(16,0)) zjs,CAST(sum(wxds-wtds)as decimal(16,0)) wkjs,
+        CAST(sum(xd-td)as decimal(16,0)) tz,CAST(sum(zj)as decimal(16,0)) zj,CAST(sum(wxd-wtd)as decimal(16,0)) wkj,
+        CAST(sum(sr)as decimal(16,0)) sr,CAST(sum(zc)as decimal(16,0)) zc,CAST(sum(yl)as decimal(16,0))yl from (
+        select
+        case when type='2' then 1 else 0 end xds,
+        case when type='3' then 1 else 0 end tds,
+        case when type='4' then 1 else 0 end zjs,
+        case when l.`code` is null and type='2' then 1 else 0 end wxds,
+        case when l.`code` is null and type='3' then 1 else 0 end wtds,
+        case when type='2' then price else 0 end xd,
+        case when type='3' then price else 0 end td,
+        case when type='4' then price/l.odds else 0 end zj,
+        case when l.`code` is null and type='2' then price else 0 end wxd,
+        case when l.`code` is null and type='3' then price else 0 end wtd,
+        case when l.`code` is not null and type='4' then price else 0 end zc,
+        case when l.`code` is not null and type='2' then price when l.`code` is not null and type='3' then -price else 0 end sr,
+        case when l.`code` is not null and type='2' then price when l.`code` is not null and type='3' then -price when l.`code` is not null and type='4' then -price else 0 end yl
+        from `order` o INNER join lottery l on o.lotteryId =l.id INNER JOIN bill b on b.orderId=o.id
+        )t
+    </select>
+    <select id="selectOrderDtosByLotteryId" resultType="OrderDto">
+        select u.account,u.`name` userName,sum(d.price) price from `lottery` l inner JOIN `order` o on l.id=o.lotteryId
+        inner JOIN `user` u on u.id=o.userId inner JOIN orderdetil d on o.id=d.orderId and CAST(l.`code` as SIGNED)=CAST(d.`code` as SIGNED) where l.id=#{lotteryId} GROUP BY account,userName
+    </select>
+    <select id="findRecordAllList" resultType="OrderDto">
+        select o.id,o.date orderTime,u.account,u.name userName,l.name,l.code,l.date,sum(if(CAST(l.`code` as SIGNED)=CAST(d.`code` as SIGNED),d.price,0)) price,sum(d.price)total  from `order` o
+        LEFT JOIN `user` u on u.id=o.userId LEFT JOIN lottery l on o.lotteryId=l.id
+        LEFT JOIN `orderdetil` d on o.id=d.orderId where l.area=#{area} GROUP BY o.id order by o.date desc LIMIT #{currIndex}, #{pageSize};
+    </select>
+    <select id="findUserAllList" resultType="User">
+        select * from user order by id asc LIMIT #{currIndex}, #{pageSize};
+    </select>
+    <select id="findLotteryIdBillList" resultType="Bill">
+        SELECT u.id userId,o.id orderId,'4' type,CAST(d.price*IFNULL(l.odds,46) as decimal(16,0)) price FROM `order` o INNER JOIN `user` u  on u.id=o.userId
+        INNER JOIN lottery l on o.lotteryId=l.id INNER JOIN `orderdetil` d on o.id=d.orderId AND CAST(d.`code` as SIGNED)=CAST(#{code} as SIGNED)
+        WHERE l.id=#{lotteryId} order by o.date asc;
+    </select>
+    <select id="findCalculationList" resultType="LotteryDto">
+        select `code`,count(userId) number,sum(total)total
+        from (
+            select d.`code`,u.id userId,ifnull(sum(d.price),0) total
+            from `lottery` l INNER JOIN `order` o on l.id=o.lotteryId INNER JOIN `user` u on o.userId=u.id
+            INNER JOIN orderdetil d on o.id=d.orderId  where l.`code` is null and l.area=#{area}
+            GROUP BY d.`code`,u.id
+        )t GROUP BY `code`  order by `code` asc;
+    </select>
+    <select id="findAllCalculationList" resultType="LotteryDto">
+        select `code`,count(userId) number,sum(total)total
+        from (
+            select d.`code`,u.id userId,ifnull(sum(d.price),0) total
+            from `lottery` l INNER JOIN `order` o on l.id=o.lotteryId INNER JOIN `user` u on o.userId=u.id
+            INNER JOIN orderdetil d on o.id=d.orderId  where l.`code` is not null and l.area=#{area}
+            GROUP BY d.`code`,u.id
+        )t GROUP BY `code`  order by `code` asc;
+    </select>
+    <select id="findAllPersonCalculationList" resultType="UserGather">
+        select id,account,`name`,cash,sum(cz) cz,sum(xd) xd,sum(td) td,sum(zj) zj,sum(tx) tx,sum(yl) yl from (
+        select u.id,u.account,u.`name`,u.cash,
+        case when type='1' then price else 0 end cz,
+        case when type='2' then price else 0 end xd,
+        case when type='3' then price else 0 end td,
+        case when type='4' then price else 0 end zj,
+        case when type='5' then price else 0 end tx,
+        case when l.`code` is not null and type='2' then -price
+        when l.`code` is not null and type='3' then price
+        when l.`code` is not null and type='4' then price
+        else 0 end yl
+        from user u LEFT JOIN bill b on u.id=b.userId left join `order` o on b.orderId=o.id left join lottery l on o.lotteryId =l.id where account!='10000'
+        )t GROUP BY id,account,`name`,cash  order by id asc;
+    </select>
+    <select id="findAllPersonCalculationListSum" resultType="UserGather">
+        select sum(cash) cash,sum(cz) cz,sum(xd) xd,sum(td) td,sum(zj) zj,sum(tx) tx,sum(yl) yl from (
+        select id, cash,sum(cz) cz,sum(xd) xd,sum(td) td,sum(zj) zj,sum(tx) tx,sum(yl) yl from (
+        select u.id,u.cash,case when type='1' then price else 0 end cz,
+        case when type='2' then price else 0 end xd,
+        case when type='3' then price else 0 end td,
+        case when type='4' then price else 0 end zj,
+        case when type='5' then price else 0 end tx,
+        case when l.`code` is not null and type='2' then -price
+        when l.`code` is not null and type='3' then price
+        when l.`code` is not null and type='4' then price
+        else 0 end yl
+        from user u LEFT JOIN bill b on u.id=b.userId left join `order` o on b.orderId=o.id left join lottery l on o.lotteryId =l.id where account!='10000'
+        )t GROUP BY id,cash)t
+    </select>
+    <select id="selectBillListReport" resultType="UserGather">
+        select sum(cash) cash,sum(cz) cz,sum(xd) xd,sum(td) td,sum(zj) zj,sum(tx) tx,sum(sr) sr,sum(zc) zc from (
+        select id, cash,sum(cz) cz,sum(xd) xd,sum(td) td,sum(zj) zj,sum(tx) tx,sum(sr) sr,sum(zc) zc from (
+        select u.id,u.cash,case when type='1' then price else 0 end cz,
+        case when type='2' then price else 0 end xd,
+        case when type='3' then price else 0 end td,
+        case when type='4' then price else 0 end zj,
+        case when type='5' then price else 0 end tx,
+        case  when l.`code` is not null and type='3' then price
+        when l.`code` is not null and type='4' then price
+        else 0 end sr,
+        case when l.`code` is not null and type='2' then price
+        else 0 end zc
+        from user u LEFT JOIN bill b on u.id=b.userId left join `order` o on b.orderId=o.id left join lottery l on o.lotteryId =l.id where u.id=#{userId}
+        )t GROUP BY id,cash)t
+    </select>
+    <insert id="insertSetup" parameterType="Setup" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO `setup`(area, odds, minutes) values (#{area},#{odds},#{minutes})
+    </insert>
+    <select id="findNowSetup" resultType="Setup">
+        select * from `setup` where area=#{area} LIMIT 1;
+    </select>
+    <update id="updateSetup">
+        update `setup` set odds=#{odds},minutes=#{minutes} where id=#{id}
+    </update>
+    <insert id="insertPayBill" parameterType="PayBill" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO `paybill`(userId, outTradeNo, type, price) values (#{userId},#{outTradeNo},#{type},#{price})
+    </insert>
+    <select id="selectPayBill" resultType="PayBill">
+        select * from `paybill` where type='1' and outTradeNo=#{outTradeNo} LIMIT 1;
+    </select>
+    <update id="updatePayBill">
+        update `paybill` set type=#{type} where id=#{id}
+    </update>
+    <select id="findUnPayBillList" resultType="PayBill">
+        select * from `paybill` where type='1' and date &lt;=DATE_SUB(NOW(), INTERVAL 15 MINUTE);
+    </select>
+</mapper>

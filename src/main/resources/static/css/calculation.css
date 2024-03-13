@@ -1,0 +1,28 @@
+.calculation header{
+    width: 100%;
+    height: 3em;
+    background-color: #00A2CA;
+}
+.calculation header p{
+    text-align: center;
+    line-height:3em;
+}
+.calculation .content{
+    width: 100%;
+    background-color: #EEEEEE;
+}
+.calculation ul li{
+    height: auto;
+    line-height: 1;
+    padding: 8px 0;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    position: relative;
+    margin-bottom: 4px;
+    display: flex;
+    text-align: center;
+    background-color: #dce0e3;
+}
+.calculation ul li span{
+     width: 25%;
+ }
